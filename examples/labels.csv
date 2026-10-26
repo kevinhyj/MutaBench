@@ -1,0 +1,9 @@
+task_id,variant_id,label
+synthetic/regression,v1,0.1
+synthetic/regression,v2,0.2
+synthetic/regression,v3,0.3
+synthetic/regression,v4,0.4
+synthetic/classification,v1,0
+synthetic/classification,v2,0
+synthetic/classification,v3,1
+synthetic/classification,v4,1

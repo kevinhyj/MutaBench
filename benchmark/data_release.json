@@ -1,0 +1,9 @@
+{
+  "schema": "mutabench-data-release-v1",
+  "status": "not_published",
+  "platform": "huggingface_datasets",
+  "repo_id": null,
+  "revision": null,
+  "files": [],
+  "note": "Full sequences, evaluator labels, MSA, structures and feature bundles are not included. A dataset ID, immutable revision and reviewed file checksums will be added after a separate dataset release."
+}

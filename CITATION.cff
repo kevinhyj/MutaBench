@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this repository when using MutaBench."
+title: MutaBench
+type: software
+version: 0.1.0
+authors:
+  - name: kevinhyj
+repository-code: "https://github.com/kevinhyj/MutaBench"
+license: MIT
+

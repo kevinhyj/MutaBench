@@ -1,0 +1,87 @@
+{
+  "schema": "evagent-zeroshot-sampling-v1",
+  "seed": 42,
+  "singlechain": {
+    "datasets": [
+      "proteingym",
+      "rnagym31"
+    ],
+    "unit": "valid unique complete sequence",
+    "pre_sort": [
+      "mutation",
+      "sequence"
+    ],
+    "rng": "numpy.random.RandomState",
+    "rng_reset": "per assay",
+    "select": "permutation(M)[:min(250,M)]",
+    "short_assays": "separate from full N250 macro"
+  },
+  "complex": {
+    "datasets": {
+      "abagym": 250,
+      "bindinggym": 250,
+      "nabe": 10,
+      "platinum": 10,
+      "skempi2": 250
+    },
+    "scope": [
+      "source",
+      "assay_group_id"
+    ],
+    "scientific_identity": [
+      "source",
+      "assay_id",
+      "reference_complex_id",
+      "normalized_sites"
+    ],
+    "site_fields": [
+      "chain",
+      "position",
+      "insertion_code",
+      "wt",
+      "mutant"
+    ],
+    "site_order": [
+      "chain",
+      "position",
+      "insertion_code",
+      "wt",
+      "mutant"
+    ],
+    "serialization": "json UTF8 sort_keys=True ensure_ascii=False separators comma-colon; no trailing newline",
+    "variant_key": "SHA256(normalized_sites)",
+    "priority": "SHA256([42,variant_key])",
+    "order": [
+      "priority",
+      "variant_id",
+      "reference_complex_id"
+    ],
+    "short_assays": "ineligible; no replacement",
+    "duplicate_measurements": "one variant; keep all source fact IDs; evaluator label policy separately frozen",
+    "modalities": [
+      "protein_protein",
+      "protein_rna",
+      "protein_dna",
+      "protein_ligand"
+    ],
+    "protein_dna": {
+      "source": "nabe",
+      "partner_type": "DNA",
+      "N": 10,
+      "algorithm": "complex_sites_hash42_v1",
+      "reservoir_allowed": false
+    },
+    "protein_ligand": {
+      "source": "platinum",
+      "N": 10,
+      "algorithm": "complex_sites_hash42_v1",
+      "reservoir_allowed": false
+    }
+  },
+  "admet": {
+    "select": "official test all rows",
+    "deduplicate_smiles": false,
+    "msa": "not_applicable"
+  },
+  "implementation_status": "functions implemented and synthetic checks; not wired to historical runners; no real selection/labels generated"
+}

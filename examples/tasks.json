@@ -1,0 +1,20 @@
+{
+  "schema": "mutabench-tasks-v1",
+  "synthetic": true,
+  "tasks": [
+    {
+      "task_id": "synthetic/regression",
+      "domain": "synthetic_regression",
+      "metric": "spearman",
+      "higher_label_is_better": true,
+      "candidate_ids": ["v1", "v2", "v3", "v4"]
+    },
+    {
+      "task_id": "synthetic/classification",
+      "domain": "synthetic_classification",
+      "metric": "auroc",
+      "higher_label_is_better": true,
+      "candidate_ids": ["v1", "v2", "v3", "v4"]
+    }
+  ]
+}

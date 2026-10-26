@@ -1,0 +1,36 @@
+{
+  "assay": "synthetic_contract",
+  "size": 6,
+  "variants": [
+    {
+      "id": "synthetic-0",
+      "seq": "ACGUACGU",
+      "score": 0
+    },
+    {
+      "id": "synthetic-1",
+      "seq": "ACGUACGU",
+      "score": 1
+    },
+    {
+      "id": "synthetic-2",
+      "seq": "ACGUACGU",
+      "score": 2
+    },
+    {
+      "id": "synthetic-3",
+      "seq": "ACGUACGU",
+      "score": 3
+    },
+    {
+      "id": "synthetic-4",
+      "seq": "ACGUACGU",
+      "score": 4
+    },
+    {
+      "id": "synthetic-5",
+      "seq": "ACGUACGU",
+      "score": 5
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+* text=auto
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.png binary
+*.pdf binary
+# Preserve the exported protocol and reference-source hashes exactly.
+baselines/evagent/evagent/** -text
+baselines/evagent/tests/** -text
+baselines/evagent/tools/** -text
+baselines/evagent/examples/** -text
+baselines/evagent/pyproject.toml -text
+baselines/singlechain/singlechain/** -text
+baselines/singlechain/run.py -text
+protocols/zeroshot/** -text
+baselines/evagent/work/** -text
+experiments/** -text

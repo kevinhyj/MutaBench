@@ -1,0 +1,2268 @@
+{
+  "schema": "mutabench-code-export-v1",
+  "upstream_project": "EVAgent",
+  "release": "0.1.0",
+  "files": [
+    {
+      "source": "code/evagent/__init__.py",
+      "destination": "baselines/evagent/evagent/__init__.py",
+      "source_sha256": "01fc7a5a1257697a61b2c9323770c37d43f12de798b7f6fe9fb53bbfd21cbd2a",
+      "exported_sha256": "01fc7a5a1257697a61b2c9323770c37d43f12de798b7f6fe9fb53bbfd21cbd2a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/acr_seq.py",
+      "destination": "baselines/evagent/evagent/acr_seq.py",
+      "source_sha256": "16c2f9a4de29ed2923d74f5515ba962dbc1b9b0cc6d2dcea7d9af2935151507a",
+      "exported_sha256": "16c2f9a4de29ed2923d74f5515ba962dbc1b9b0cc6d2dcea7d9af2935151507a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/admet/__init__.py",
+      "destination": "baselines/evagent/evagent/admet/__init__.py",
+      "source_sha256": "d9fbb09fc13bbda0dd1db20deaf746e9a8df43e7514373479565a01b692444c7",
+      "exported_sha256": "d9fbb09fc13bbda0dd1db20deaf746e9a8df43e7514373479565a01b692444c7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/admet/campaign.py",
+      "destination": "baselines/evagent/evagent/admet/campaign.py",
+      "source_sha256": "5f0c29c66d2d51c9911fb2b39ed3945826daae14058e6b2aff54be6f605231bb",
+      "exported_sha256": "5f0c29c66d2d51c9911fb2b39ed3945826daae14058e6b2aff54be6f605231bb",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/admet/evaluate.py",
+      "destination": "baselines/evagent/evagent/admet/evaluate.py",
+      "source_sha256": "caab85c8d1d336068c653c3985eab6284590b2867b829f2c8aa4a4633c167b57",
+      "exported_sha256": "caab85c8d1d336068c653c3985eab6284590b2867b829f2c8aa4a4633c167b57",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/admet/prepare.py",
+      "destination": "baselines/evagent/evagent/admet/prepare.py",
+      "source_sha256": "e6aff23c9ccc317fd84156be0b1244859d784bd70f4ffe9b23c26b9350f8be42",
+      "exported_sha256": "e6aff23c9ccc317fd84156be0b1244859d784bd70f4ffe9b23c26b9350f8be42",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/admet/report.py",
+      "destination": "baselines/evagent/evagent/admet/report.py",
+      "source_sha256": "6ffc72cf73879fbfe9c532781acd4decd1eddd0f02d4ac9c12138f123f1cb74e",
+      "exported_sha256": "6ffc72cf73879fbfe9c532781acd4decd1eddd0f02d4ac9c12138f123f1cb74e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/admet/supervise.py",
+      "destination": "baselines/evagent/evagent/admet/supervise.py",
+      "source_sha256": "2ca6dff495374b2ac33800849ef22ccdf93c57c889e839387393bb8fd104bdc8",
+      "exported_sha256": "2ca6dff495374b2ac33800849ef22ccdf93c57c889e839387393bb8fd104bdc8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/api_timeouts.py",
+      "destination": "baselines/evagent/evagent/api_timeouts.py",
+      "source_sha256": "213e26807ea44647b1975d1f8828e4166cbe5c5a6c922a86933b6dfae204de87",
+      "exported_sha256": "213e26807ea44647b1975d1f8828e4166cbe5c5a6c922a86933b6dfae204de87",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/compact.py",
+      "destination": "baselines/evagent/evagent/compact.py",
+      "source_sha256": "d6c6723a6036678fa7e0e7e911c7d0a2cf7e1fe209904b7a28e04bfc6db64d46",
+      "exported_sha256": "d6c6723a6036678fa7e0e7e911c7d0a2cf7e1fe209904b7a28e04bfc6db64d46",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/config.py",
+      "destination": "baselines/evagent/evagent/config.py",
+      "source_sha256": "cbc474395092605d5a3c6b094bf56bc413c8354726ba5afc2315a8aa1bbc2297",
+      "exported_sha256": "cbc474395092605d5a3c6b094bf56bc413c8354726ba5afc2315a8aa1bbc2297",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/experiments.py",
+      "destination": "baselines/evagent/evagent/experiments.py",
+      "source_sha256": "bb0e99bd38c195726bd168ff12648b83aede35e5ef33ae740afa483720448f3d",
+      "exported_sha256": "bb0e99bd38c195726bd168ff12648b83aede35e5ef33ae740afa483720448f3d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/__init__.py",
+      "destination": "baselines/evagent/evagent/fewshot/__init__.py",
+      "source_sha256": "30334395649e1f4894a8f6644ab53734ac4c15012f3829f3fd8349a4819557ac",
+      "exported_sha256": "30334395649e1f4894a8f6644ab53734ac4c15012f3829f3fd8349a4819557ac",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/__main__.py",
+      "destination": "baselines/evagent/evagent/fewshot/__main__.py",
+      "source_sha256": "4e7cdf195f7173e612e1f7388e63160402296abc8e6dff5a82a571529b83dc7b",
+      "exported_sha256": "4e7cdf195f7173e612e1f7388e63160402296abc8e6dff5a82a571529b83dc7b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/data.py",
+      "destination": "baselines/evagent/evagent/fewshot/data.py",
+      "source_sha256": "854fe6a6fe16b09282aa1c5a60ec9a3f807264215a710ce4e1899983ab1b02ec",
+      "exported_sha256": "854fe6a6fe16b09282aa1c5a60ec9a3f807264215a710ce4e1899983ab1b02ec",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/evaluation.py",
+      "destination": "baselines/evagent/evagent/fewshot/evaluation.py",
+      "source_sha256": "b3880a797977a1ab19d8a96e88c6db8899af347c0700d39f36a6fbbd1a27b4b5",
+      "exported_sha256": "b3880a797977a1ab19d8a96e88c6db8899af347c0700d39f36a6fbbd1a27b4b5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/protocol.py",
+      "destination": "baselines/evagent/evagent/fewshot/protocol.py",
+      "source_sha256": "ac04960f1a835da1835ffdd5562859556e6031e94547da03b825769a1eae827f",
+      "exported_sha256": "ac04960f1a835da1835ffdd5562859556e6031e94547da03b825769a1eae827f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/reporting.py",
+      "destination": "baselines/evagent/evagent/fewshot/reporting.py",
+      "source_sha256": "5ff9d978000cc96d14a741ed003b75586d8071c57f011a168be07d50d5edbe24",
+      "exported_sha256": "5ff9d978000cc96d14a741ed003b75586d8071c57f011a168be07d50d5edbe24",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/runner.py",
+      "destination": "baselines/evagent/evagent/fewshot/runner.py",
+      "source_sha256": "f269fa6ed3d702088b9dfc16daf4aee1e7df176e745c675bf25d1c237b72d42f",
+      "exported_sha256": "f269fa6ed3d702088b9dfc16daf4aee1e7df176e745c675bf25d1c237b72d42f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/scale/__init__.py",
+      "destination": "baselines/evagent/evagent/fewshot/scale/__init__.py",
+      "source_sha256": "c3baf93a9f7db34b5505f750ec97ed584014bc37dc73fd33a7727f2aaf5a75a9",
+      "exported_sha256": "c3baf93a9f7db34b5505f750ec97ed584014bc37dc73fd33a7727f2aaf5a75a9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/scale/audit.py",
+      "destination": "baselines/evagent/evagent/fewshot/scale/audit.py",
+      "source_sha256": "c373ea8cb0f43143eafa20cbd17457157688e0edf70da02a3692d298abf58bed",
+      "exported_sha256": "c373ea8cb0f43143eafa20cbd17457157688e0edf70da02a3692d298abf58bed",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/scale/campaign.py",
+      "destination": "baselines/evagent/evagent/fewshot/scale/campaign.py",
+      "source_sha256": "9e604e9a57e386b00e5b850922eae0730e08bdb45f919e4dabd465fd9296c6d4",
+      "exported_sha256": "9e604e9a57e386b00e5b850922eae0730e08bdb45f919e4dabd465fd9296c6d4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/scale/execution.py",
+      "destination": "baselines/evagent/evagent/fewshot/scale/execution.py",
+      "source_sha256": "fd5c1b63b04abadcbfe0880d50de882eba21b93789d73655160c557dd5c13777",
+      "exported_sha256": "fd5c1b63b04abadcbfe0880d50de882eba21b93789d73655160c557dd5c13777",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/scale/prepare.py",
+      "destination": "baselines/evagent/evagent/fewshot/scale/prepare.py",
+      "source_sha256": "b235d1ccb5e741582496f89704eade1c01036bb853e0051151829db1d35bae9b",
+      "exported_sha256": "b235d1ccb5e741582496f89704eade1c01036bb853e0051151829db1d35bae9b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/scale/report.py",
+      "destination": "baselines/evagent/evagent/fewshot/scale/report.py",
+      "source_sha256": "cb57e4242be216dd9dddedf2abed46ac54a436fe6ee42a9325088a1c066c9829",
+      "exported_sha256": "cb57e4242be216dd9dddedf2abed46ac54a436fe6ee42a9325088a1c066c9829",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/scale/watchdog.py",
+      "destination": "baselines/evagent/evagent/fewshot/scale/watchdog.py",
+      "source_sha256": "f6e2958b103848d01ec9cf17bcfce9c6c2410c30f3222c2458caf5fe06cfc0ec",
+      "exported_sha256": "f6e2958b103848d01ec9cf17bcfce9c6c2410c30f3222c2458caf5fe06cfc0ec",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fewshot/scale/workflow.py",
+      "destination": "baselines/evagent/evagent/fewshot/scale/workflow.py",
+      "source_sha256": "103b72f775bd51741d9ee37a9279e263e35296f85910cda2695e5faf48ff1a89",
+      "exported_sha256": "103b72f775bd51741d9ee37a9279e263e35296f85910cda2695e5faf48ff1a89",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/fullseq.py",
+      "destination": "baselines/evagent/evagent/fullseq.py",
+      "source_sha256": "c731d3408d9b4311545cdaa05b21f0b782feb75f793bb1d3cddcbb2985b9049b",
+      "exported_sha256": "c731d3408d9b4311545cdaa05b21f0b782feb75f793bb1d3cddcbb2985b9049b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/graph.py",
+      "destination": "baselines/evagent/evagent/graph.py",
+      "source_sha256": "f3df869d48581eec14b769e93a19a2637c6d75e618897195658fe2408304480e",
+      "exported_sha256": "f3df869d48581eec14b769e93a19a2637c6d75e618897195658fe2408304480e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/__init__.py",
+      "destination": "baselines/evagent/evagent/integrated/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exported_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/anchored_batching.py",
+      "destination": "baselines/evagent/evagent/integrated/anchored_batching.py",
+      "source_sha256": "c1e794da7013b370ebbc37ad499c530d058a202a5a7af17af88a835ff6c04e85",
+      "exported_sha256": "c1e794da7013b370ebbc37ad499c530d058a202a5a7af17af88a835ff6c04e85",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/backends.py",
+      "destination": "baselines/evagent/evagent/integrated/backends.py",
+      "source_sha256": "74f4cedf1180f80e0520b80ff8e5aaa4a3de45145bc07af21eecbd1ec2799cb3",
+      "exported_sha256": "74f4cedf1180f80e0520b80ff8e5aaa4a3de45145bc07af21eecbd1ec2799cb3",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/bundles.py",
+      "destination": "baselines/evagent/evagent/integrated/bundles.py",
+      "source_sha256": "e022c9ac7219f25b7077aaacfa1b85cd766b7759a8261c254bf902e9b3fbf530",
+      "exported_sha256": "e022c9ac7219f25b7077aaacfa1b85cd766b7759a8261c254bf902e9b3fbf530",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/campaign.py",
+      "destination": "baselines/evagent/evagent/integrated/campaign.py",
+      "source_sha256": "2456f2fce29b9c0650e4c3d0d90a988a164352d47e278a17130ed0bc53367c94",
+      "exported_sha256": "2456f2fce29b9c0650e4c3d0d90a988a164352d47e278a17130ed0bc53367c94",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/chunked_scoring.py",
+      "destination": "baselines/evagent/evagent/integrated/chunked_scoring.py",
+      "source_sha256": "471a2a7e6eef6d0ec120588d846d370b3bfb3547e80aab3562ff04dd61ba3467",
+      "exported_sha256": "471a2a7e6eef6d0ec120588d846d370b3bfb3547e80aab3562ff04dd61ba3467",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/config.py",
+      "destination": "baselines/evagent/evagent/integrated/config.py",
+      "source_sha256": "ea0bdc193d6eaab1cb896f5269480d347b249267328123fb5c41b79d529722eb",
+      "exported_sha256": "ea0bdc193d6eaab1cb896f5269480d347b249267328123fb5c41b79d529722eb",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/evidence.py",
+      "destination": "baselines/evagent/evagent/integrated/evidence.py",
+      "source_sha256": "6b3f9f440e15bd5e0f30657b0d48f083157ad9ecc701d9160c75b194869e0b81",
+      "exported_sha256": "6b3f9f440e15bd5e0f30657b0d48f083157ad9ecc701d9160c75b194869e0b81",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/evidence_tools.py",
+      "destination": "baselines/evagent/evagent/integrated/evidence_tools.py",
+      "source_sha256": "8e8881c7d7e89b7960e20eb6d9bdd3561e2ecb0c86427449b0378de27bf2481a",
+      "exported_sha256": "8e8881c7d7e89b7960e20eb6d9bdd3561e2ecb0c86427449b0378de27bf2481a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/experiment.py",
+      "destination": "baselines/evagent/evagent/integrated/experiment.py",
+      "source_sha256": "cc844fad42f0d3a7bf16068a891421300d53407d06fb1585549fdb62618d5e34",
+      "exported_sha256": "cc844fad42f0d3a7bf16068a891421300d53407d06fb1585549fdb62618d5e34",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/gateway.py",
+      "destination": "baselines/evagent/evagent/integrated/gateway.py",
+      "source_sha256": "60a990c8989bcc52f5e8a4976620334f57be73cf46f48e2b466c4e7830d06802",
+      "exported_sha256": "60a990c8989bcc52f5e8a4976620334f57be73cf46f48e2b466c4e7830d06802",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/learning_memory.py",
+      "destination": "baselines/evagent/evagent/integrated/learning_memory.py",
+      "source_sha256": "81db5a54b40ae2c6e5f218e19f522c72d23688284733549a35c659878149ff8f",
+      "exported_sha256": "81db5a54b40ae2c6e5f218e19f522c72d23688284733549a35c659878149ff8f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/learning_store.py",
+      "destination": "baselines/evagent/evagent/integrated/learning_store.py",
+      "source_sha256": "5ba9bc7acdbd0a35a8d9156fa3df8a0a393b23cdbf41a7fa733b57bdf5d1415d",
+      "exported_sha256": "5ba9bc7acdbd0a35a8d9156fa3df8a0a393b23cdbf41a7fa733b57bdf5d1415d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/memory.py",
+      "destination": "baselines/evagent/evagent/integrated/memory.py",
+      "source_sha256": "713eb4f52a8faa361d8710c8977475047e8bb48d72739a3aaaf650eec2067724",
+      "exported_sha256": "713eb4f52a8faa361d8710c8977475047e8bb48d72739a3aaaf650eec2067724",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/protocols.py",
+      "destination": "baselines/evagent/evagent/integrated/protocols.py",
+      "source_sha256": "9bad3da123590682935110de0a701cbbf324fec7b5741af4443f398d0c0643f2",
+      "exported_sha256": "9bad3da123590682935110de0a701cbbf324fec7b5741af4443f398d0c0643f2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/ranking.py",
+      "destination": "baselines/evagent/evagent/integrated/ranking.py",
+      "source_sha256": "d0c596468b8245c731868c1723341050d2709ccd11c938c28a9a60424de224a7",
+      "exported_sha256": "d0c596468b8245c731868c1723341050d2709ccd11c938c28a9a60424de224a7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/__init__.py",
+      "destination": "baselines/evagent/evagent/integrated/research/__init__.py",
+      "source_sha256": "8a2d0cf568e757b03bd6201e5f07715770abc6aa0cae2ba2b4c5c5696c182960",
+      "exported_sha256": "8a2d0cf568e757b03bd6201e5f07715770abc6aa0cae2ba2b4c5c5696c182960",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/agents.py",
+      "destination": "baselines/evagent/evagent/integrated/research/agents.py",
+      "source_sha256": "8c48307496b1a9b98ccbc95d348d66a55db85e3c3c4054a7b7fa216992118155",
+      "exported_sha256": "8c48307496b1a9b98ccbc95d348d66a55db85e3c3c4054a7b7fa216992118155",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/campaign.py",
+      "destination": "baselines/evagent/evagent/integrated/research/campaign.py",
+      "source_sha256": "d011643552d3f1d37253c91ebcac7adbb9fbcff91510bbbd31ce4f9613fb0348",
+      "exported_sha256": "d011643552d3f1d37253c91ebcac7adbb9fbcff91510bbbd31ce4f9613fb0348",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/concurrent_gateway.py",
+      "destination": "baselines/evagent/evagent/integrated/research/concurrent_gateway.py",
+      "source_sha256": "10c564f79e414000a0bcb37cacc65944924f7136f8ea5ebf88da434737bc747e",
+      "exported_sha256": "10c564f79e414000a0bcb37cacc65944924f7136f8ea5ebf88da434737bc747e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/contracts.py",
+      "destination": "baselines/evagent/evagent/integrated/research/contracts.py",
+      "source_sha256": "9d9db6ecc2a88c53d95bff117a5478a27ad767fc9952cd1109777d9019879da9",
+      "exported_sha256": "9d9db6ecc2a88c53d95bff117a5478a27ad767fc9952cd1109777d9019879da9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/discovery.py",
+      "destination": "baselines/evagent/evagent/integrated/research/discovery.py",
+      "source_sha256": "aaef8d5d4d1268aeaba6ee4649b6ac4c1c5f4d9924238ab9bf5e071f399eed33",
+      "exported_sha256": "aaef8d5d4d1268aeaba6ee4649b6ac4c1c5f4d9924238ab9bf5e071f399eed33",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/evidence_agents.py",
+      "destination": "baselines/evagent/evagent/integrated/research/evidence_agents.py",
+      "source_sha256": "b043e8d4ef8626f6c1ed6a655146ba4c8658fd1938d2bcd1df0f84ea08a091d4",
+      "exported_sha256": "b043e8d4ef8626f6c1ed6a655146ba4c8658fd1938d2bcd1df0f84ea08a091d4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/framework_model.py",
+      "destination": "baselines/evagent/evagent/integrated/research/framework_model.py",
+      "source_sha256": "72e3c80a16693925e5ee0a6230c29f1371ef3ad4a42ea9fd18dcc2fb796d26a0",
+      "exported_sha256": "72e3c80a16693925e5ee0a6230c29f1371ef3ad4a42ea9fd18dcc2fb796d26a0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/framework_runner.py",
+      "destination": "baselines/evagent/evagent/integrated/research/framework_runner.py",
+      "source_sha256": "d523b74c6a864c39b930f786138be67172c520ee7c1e3028b9f902aeda5d799f",
+      "exported_sha256": "d523b74c6a864c39b930f786138be67172c520ee7c1e3028b9f902aeda5d799f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/grounded_runner.py",
+      "destination": "baselines/evagent/evagent/integrated/research/grounded_runner.py",
+      "source_sha256": "88a5da7abc19855d2bf90139d0f51a93fe6feaaa78a52fe3bef488c4d20b8d09",
+      "exported_sha256": "88a5da7abc19855d2bf90139d0f51a93fe6feaaa78a52fe3bef488c4d20b8d09",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/literature.py",
+      "destination": "baselines/evagent/evagent/integrated/research/literature.py",
+      "source_sha256": "f479c04bdffa678bb92b25c8f8f371f1066ce34845b4303c098aedfa1956fd12",
+      "exported_sha256": "f479c04bdffa678bb92b25c8f8f371f1066ce34845b4303c098aedfa1956fd12",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/literature_review.py",
+      "destination": "baselines/evagent/evagent/integrated/research/literature_review.py",
+      "source_sha256": "1459e86c9a7a07268e04436b8ed6b632b32210801adc8e7784053e2eb8834342",
+      "exported_sha256": "1459e86c9a7a07268e04436b8ed6b632b32210801adc8e7784053e2eb8834342",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/msa_agent.py",
+      "destination": "baselines/evagent/evagent/integrated/research/msa_agent.py",
+      "source_sha256": "ee372e95fcc4ec6c45207c2f6c84e6091e859b13109a9b8fbe83bda9830759fd",
+      "exported_sha256": "ee372e95fcc4ec6c45207c2f6c84e6091e859b13109a9b8fbe83bda9830759fd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/native_tools.py",
+      "destination": "baselines/evagent/evagent/integrated/research/native_tools.py",
+      "source_sha256": "e0ea46b1eede8dcf8a4d65522475abf5b0a7f3792137bc693d5171a62e570ce9",
+      "exported_sha256": "e0ea46b1eede8dcf8a4d65522475abf5b0a7f3792137bc693d5171a62e570ce9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/parallel_campaign.py",
+      "destination": "baselines/evagent/evagent/integrated/research/parallel_campaign.py",
+      "source_sha256": "e532cb4fb369e00183df3dd71048a175d240cab6782a7318d5bdcc80f156bd39",
+      "exported_sha256": "e532cb4fb369e00183df3dd71048a175d240cab6782a7318d5bdcc80f156bd39",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/parallel_resume.py",
+      "destination": "baselines/evagent/evagent/integrated/research/parallel_resume.py",
+      "source_sha256": "7fc58f0e2cbd2fbb887040ac3ba716020218ecb80bd83ade14c54be08692cf45",
+      "exported_sha256": "7fc58f0e2cbd2fbb887040ac3ba716020218ecb80bd83ade14c54be08692cf45",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/prepare.py",
+      "destination": "baselines/evagent/evagent/integrated/research/prepare.py",
+      "source_sha256": "2a18b17f3551598af8c756b354d65b483acbdaf7c50259fdeb41a0e510ad0dc1",
+      "exported_sha256": "2a18b17f3551598af8c756b354d65b483acbdaf7c50259fdeb41a0e510ad0dc1",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/reporting.py",
+      "destination": "baselines/evagent/evagent/integrated/research/reporting.py",
+      "source_sha256": "c9eac4686fdff39e834c579bd7c98536d2d7d5dada2a6427895956e770624c5b",
+      "exported_sha256": "c9eac4686fdff39e834c579bd7c98536d2d7d5dada2a6427895956e770624c5b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/review.py",
+      "destination": "baselines/evagent/evagent/integrated/research/review.py",
+      "source_sha256": "695e6d0cc47c94c0af9a55617a6bde6de632812f0d3b24747d88613f55570827",
+      "exported_sha256": "695e6d0cc47c94c0af9a55617a6bde6de632812f0d3b24747d88613f55570827",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/structure.py",
+      "destination": "baselines/evagent/evagent/integrated/research/structure.py",
+      "source_sha256": "097dbcbad72b2a19b16aa8a3157ad357cab56b1dec012fc093622b11e6a85521",
+      "exported_sha256": "097dbcbad72b2a19b16aa8a3157ad357cab56b1dec012fc093622b11e6a85521",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/structure_analysis.py",
+      "destination": "baselines/evagent/evagent/integrated/research/structure_analysis.py",
+      "source_sha256": "46588c64918c7c37449551ca84d83626d2796f292d01d9643fb6e898ef7c9d88",
+      "exported_sha256": "46588c64918c7c37449551ca84d83626d2796f292d01d9643fb6e898ef7c9d88",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/structure_review.py",
+      "destination": "baselines/evagent/evagent/integrated/research/structure_review.py",
+      "source_sha256": "e0aeb1d080625c82c6e5306f506ee0db47a587d45d118802ecc4a9ae56866982",
+      "exported_sha256": "e0aeb1d080625c82c6e5306f506ee0db47a587d45d118802ecc4a9ae56866982",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/research/tools.py",
+      "destination": "baselines/evagent/evagent/integrated/research/tools.py",
+      "source_sha256": "a12fd32d41760b9cd56cab9cf67a9698dcb083c19b7c213f6d73cb03f83fd1a8",
+      "exported_sha256": "a12fd32d41760b9cd56cab9cf67a9698dcb083c19b7c213f6d73cb03f83fd1a8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/self_check.py",
+      "destination": "baselines/evagent/evagent/integrated/self_check.py",
+      "source_sha256": "79227d7bccb919ec0535288bf630cc26c091af6aa9c5d77ce6c4474e27cfb00b",
+      "exported_sha256": "79227d7bccb919ec0535288bf630cc26c091af6aa9c5d77ce6c4474e27cfb00b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/strategy_memory.py",
+      "destination": "baselines/evagent/evagent/integrated/strategy_memory.py",
+      "source_sha256": "19327401242815f36e5c79fdb92f1e34f6ae49c30e24634329fc90503ef2adbd",
+      "exported_sha256": "19327401242815f36e5c79fdb92f1e34f6ae49c30e24634329fc90503ef2adbd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/structure_tools.py",
+      "destination": "baselines/evagent/evagent/integrated/structure_tools.py",
+      "source_sha256": "66f549f154e4085146511e6b2c189258451d02797fb06a3654e5e6f0d9fd7fe1",
+      "exported_sha256": "66f549f154e4085146511e6b2c189258451d02797fb06a3654e5e6f0d9fd7fe1",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/tasks.py",
+      "destination": "baselines/evagent/evagent/integrated/tasks.py",
+      "source_sha256": "f9e56a60ac675b1cbf939a72c622b1f74e3245981ca90cd4d109edff81512fa0",
+      "exported_sha256": "f9e56a60ac675b1cbf939a72c622b1f74e3245981ca90cd4d109edff81512fa0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/workflow.py",
+      "destination": "baselines/evagent/evagent/integrated/workflow.py",
+      "source_sha256": "599932172da34e5f497592b9c253df9e02bfe10635c10a6509b25a35d943c3a7",
+      "exported_sha256": "599932172da34e5f497592b9c253df9e02bfe10635c10a6509b25a35d943c3a7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/large_n.py",
+      "destination": "baselines/evagent/evagent/large_n.py",
+      "source_sha256": "048eee80f2b015c89d66d925bc1254878b35ded632ab9aa7c7cab2af81159397",
+      "exported_sha256": "048eee80f2b015c89d66d925bc1254878b35ded632ab9aa7c7cab2af81159397",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/main.py",
+      "destination": "baselines/evagent/evagent/main.py",
+      "source_sha256": "e11f5c578d0f49fe9afb669cd692bb839a5d5475a953c62dabd55feaa93ebdd2",
+      "exported_sha256": "e11f5c578d0f49fe9afb669cd692bb839a5d5475a953c62dabd55feaa93ebdd2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/model.py",
+      "destination": "baselines/evagent/evagent/model.py",
+      "source_sha256": "bb888ced3a0a60e1606b1e77231c63829d5274f7c4b3070a419de87d01258b54",
+      "exported_sha256": "bb888ced3a0a60e1606b1e77231c63829d5274f7c4b3070a419de87d01258b54",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/offline_ablation.py",
+      "destination": "baselines/evagent/evagent/offline_ablation.py",
+      "source_sha256": "5f72a4e3f1690ce4b383aae78b4499e08ed76a188c4fd9d1cc7cd44bdf2b21e2",
+      "exported_sha256": "5f72a4e3f1690ce4b383aae78b4499e08ed76a188c4fd9d1cc7cd44bdf2b21e2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/openai_compatible.py",
+      "destination": "baselines/evagent/evagent/openai_compatible.py",
+      "source_sha256": "15dd0645c5ea2e1f8daa19f5ec4ba4a6d68f34fb520a5e0bdc39d1c2482dea53",
+      "exported_sha256": "15dd0645c5ea2e1f8daa19f5ec4ba4a6d68f34fb520a5e0bdc39d1c2482dea53",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/ranking.py",
+      "destination": "baselines/evagent/evagent/ranking.py",
+      "source_sha256": "2043460b86e16b41c7b2250986752fae76720ef19bd971217a4cfa5c95a820b1",
+      "exported_sha256": "2043460b86e16b41c7b2250986752fae76720ef19bd971217a4cfa5c95a820b1",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/runtime.py",
+      "destination": "baselines/evagent/evagent/runtime.py",
+      "source_sha256": "a9371079b3d2c26f7f7a34a22e9268bab0e8811ce5f4ace7ccb76dce8a621074",
+      "exported_sha256": "a9371079b3d2c26f7f7a34a22e9268bab0e8811ce5f4ace7ccb76dce8a621074",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/schemas.py",
+      "destination": "baselines/evagent/evagent/schemas.py",
+      "source_sha256": "2dcfa1df8fc80cb5bc4e7f48a9d768fab730ed24e7767eab09e6cfe90fa252e7",
+      "exported_sha256": "2dcfa1df8fc80cb5bc4e7f48a9d768fab730ed24e7767eab09e6cfe90fa252e7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_acr_seq.py",
+      "destination": "baselines/evagent/tests/test_acr_seq.py",
+      "source_sha256": "6531d92f020d57f02a94641cf0e7a6f9202688f2b6529b4123193bd896e6d2a0",
+      "exported_sha256": "6531d92f020d57f02a94641cf0e7a6f9202688f2b6529b4123193bd896e6d2a0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_anchored_review.py",
+      "destination": "baselines/evagent/tests/test_anchored_review.py",
+      "source_sha256": "9890ef3420695f622b64d7f53e139d099732aea65c237da98f6814df096a02d8",
+      "exported_sha256": "9890ef3420695f622b64d7f53e139d099732aea65c237da98f6814df096a02d8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_compact.py",
+      "destination": "baselines/evagent/tests/test_compact.py",
+      "source_sha256": "981ffc39de4a13366ba709ab62ad356494e0740dd4a980fdecee33e15031851c",
+      "exported_sha256": "981ffc39de4a13366ba709ab62ad356494e0740dd4a980fdecee33e15031851c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_core.py",
+      "destination": "baselines/evagent/tests/test_core.py",
+      "source_sha256": "70780012b653deb418e093aa71da89ecf3c50f33deae0443427b602ab24c7bd9",
+      "exported_sha256": "70780012b653deb418e093aa71da89ecf3c50f33deae0443427b602ab24c7bd9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_evidence_agents_v2.py",
+      "destination": "baselines/evagent/tests/test_evidence_agents_v2.py",
+      "source_sha256": "2cc30e95bad9c798aa5f02286eee3635335c409a8081026c2e16aea474acfb16",
+      "exported_sha256": "2cc30e95bad9c798aa5f02286eee3635335c409a8081026c2e16aea474acfb16",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_experiments.py",
+      "destination": "baselines/evagent/tests/test_experiments.py",
+      "source_sha256": "d13344d8b54d68da47ea15b240c030582b40929c7ade0e788b07ba5105f1a6aa",
+      "exported_sha256": "d13344d8b54d68da47ea15b240c030582b40929c7ade0e788b07ba5105f1a6aa",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_fewshot_continuation.py",
+      "destination": "baselines/evagent/tests/test_fewshot_continuation.py",
+      "source_sha256": "7448d6ba1e6f7daf495743f6226a67fb8e699c8a6a3c57aabd30a96f4fc6617b",
+      "exported_sha256": "7448d6ba1e6f7daf495743f6226a67fb8e699c8a6a3c57aabd30a96f4fc6617b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_fewshot_data.py",
+      "destination": "baselines/evagent/tests/test_fewshot_data.py",
+      "source_sha256": "e9eb0846ae4fb3ae49f6721330507955890cb6fd8f6fbea6ad05aac87f26bf01",
+      "exported_sha256": "e9eb0846ae4fb3ae49f6721330507955890cb6fd8f6fbea6ad05aac87f26bf01",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_fewshot_evaluation.py",
+      "destination": "baselines/evagent/tests/test_fewshot_evaluation.py",
+      "source_sha256": "bcfab38442691a63c5e8f5018cd01d665fa06f3d24d3f1cfa445e359feabccce",
+      "exported_sha256": "bcfab38442691a63c5e8f5018cd01d665fa06f3d24d3f1cfa445e359feabccce",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_fewshot_protocol.py",
+      "destination": "baselines/evagent/tests/test_fewshot_protocol.py",
+      "source_sha256": "81bad154544b0a8aa03bf966ae8b16cb5caa69e739c6c5fb0f4735ef3c7b65be",
+      "exported_sha256": "81bad154544b0a8aa03bf966ae8b16cb5caa69e739c6c5fb0f4735ef3c7b65be",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_fewshot_reporting.py",
+      "destination": "baselines/evagent/tests/test_fewshot_reporting.py",
+      "source_sha256": "29fd0e532ec70faf94b533babb455e1abb28def756e6a376c28527551fd481b4",
+      "exported_sha256": "29fd0e532ec70faf94b533babb455e1abb28def756e6a376c28527551fd481b4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_fewshot_runner.py",
+      "destination": "baselines/evagent/tests/test_fewshot_runner.py",
+      "source_sha256": "89c0bd757357c12c72ab6ad2bb3617c314fe82afea7c664518c6ecd4385f402b",
+      "exported_sha256": "89c0bd757357c12c72ab6ad2bb3617c314fe82afea7c664518c6ecd4385f402b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_fewshot_scale.py",
+      "destination": "baselines/evagent/tests/test_fewshot_scale.py",
+      "source_sha256": "aede58480a0da3ea5c5bfbeb59c647ffa4809ef6902406644c23dc413b22ee1d",
+      "exported_sha256": "aede58480a0da3ea5c5bfbeb59c647ffa4809ef6902406644c23dc413b22ee1d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_framework_campaign.py",
+      "destination": "baselines/evagent/tests/test_framework_campaign.py",
+      "source_sha256": "ad0279be41c43b4ac071cc4854c93257247453d6b96b6c07403070d6b7addf4e",
+      "exported_sha256": "ad0279be41c43b4ac071cc4854c93257247453d6b96b6c07403070d6b7addf4e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_framework_evidence_preparation.py",
+      "destination": "baselines/evagent/tests/test_framework_evidence_preparation.py",
+      "source_sha256": "c003e56854acf2be8af101c5fcb97d0c21941d4164f8f045e6d076a2c0fa24b1",
+      "exported_sha256": "c003e56854acf2be8af101c5fcb97d0c21941d4164f8f045e6d076a2c0fa24b1",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_framework_model.py",
+      "destination": "baselines/evagent/tests/test_framework_model.py",
+      "source_sha256": "b805b4d3dd06586d97c93cdbd0389184727130f2a8011272dbff08a7aba7b305",
+      "exported_sha256": "b805b4d3dd06586d97c93cdbd0389184727130f2a8011272dbff08a7aba7b305",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_fullseq.py",
+      "destination": "baselines/evagent/tests/test_fullseq.py",
+      "source_sha256": "31453f2bb47424b4b50047ca58d36467001c071526939519c1b16033cde7cb94",
+      "exported_sha256": "31453f2bb47424b4b50047ca58d36467001c071526939519c1b16033cde7cb94",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_gemini_seed42_profile.py",
+      "destination": "baselines/evagent/tests/test_gemini_seed42_profile.py",
+      "source_sha256": "23b3b96a7166c8f9ed98ab91875d4c520e4f6aeeb0da8d25680aed92021cda9d",
+      "exported_sha256": "23b3b96a7166c8f9ed98ab91875d4c520e4f6aeeb0da8d25680aed92021cda9d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_grounded_campaign.py",
+      "destination": "baselines/evagent/tests/test_grounded_campaign.py",
+      "source_sha256": "f0b24e360e230d8f393ef84ac5940d19386379a1f102966e22401e5b7a0b0887",
+      "exported_sha256": "f0b24e360e230d8f393ef84ac5940d19386379a1f102966e22401e5b7a0b0887",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_integrated_backends.py",
+      "destination": "baselines/evagent/tests/test_integrated_backends.py",
+      "source_sha256": "9113edfd8811e14e4a63942d5e0af252b3e51b363528e87533e0ad8bbe081a9a",
+      "exported_sha256": "9113edfd8811e14e4a63942d5e0af252b3e51b363528e87533e0ad8bbe081a9a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_integrated_evidence.py",
+      "destination": "baselines/evagent/tests/test_integrated_evidence.py",
+      "source_sha256": "242333934a5ccdfb93707eac9b1f8989200bede66bb5dd5502d417fc54a68efe",
+      "exported_sha256": "242333934a5ccdfb93707eac9b1f8989200bede66bb5dd5502d417fc54a68efe",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_integrated_experiment.py",
+      "destination": "baselines/evagent/tests/test_integrated_experiment.py",
+      "source_sha256": "b906179f4943dfa55a16c245a69c17ba243aaa85bf5f45087769ffe9c7a13615",
+      "exported_sha256": "b906179f4943dfa55a16c245a69c17ba243aaa85bf5f45087769ffe9c7a13615",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_integrated_gateway.py",
+      "destination": "baselines/evagent/tests/test_integrated_gateway.py",
+      "source_sha256": "398f1fd873d612e63507837901287465f6d3b09ab5415aa39d1d26a5e063b919",
+      "exported_sha256": "398f1fd873d612e63507837901287465f6d3b09ab5415aa39d1d26a5e063b919",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_integrated_learning.py",
+      "destination": "baselines/evagent/tests/test_integrated_learning.py",
+      "source_sha256": "0d4655790972f0bb6fad69347f41032eaa1be771e1f49c8f1f2d37255e2f9466",
+      "exported_sha256": "0d4655790972f0bb6fad69347f41032eaa1be771e1f49c8f1f2d37255e2f9466",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_integrated_memory.py",
+      "destination": "baselines/evagent/tests/test_integrated_memory.py",
+      "source_sha256": "7aa000a69bec1c6e7778691f1b03e0632e76505b4cb9ae29f7ae3f3ca07d9b0f",
+      "exported_sha256": "7aa000a69bec1c6e7778691f1b03e0632e76505b4cb9ae29f7ae3f3ca07d9b0f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_integrated_protocols.py",
+      "destination": "baselines/evagent/tests/test_integrated_protocols.py",
+      "source_sha256": "36c9525f71a4f9ba60a8e0ea8bd06841956bd778ff7e6ca970aef87e9df5cdac",
+      "exported_sha256": "36c9525f71a4f9ba60a8e0ea8bd06841956bd778ff7e6ca970aef87e9df5cdac",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_integrated_task_inputs.py",
+      "destination": "baselines/evagent/tests/test_integrated_task_inputs.py",
+      "source_sha256": "f55fd89a814b451d21427508f875a811fe8d8452f52328155d4d604ddd77835d",
+      "exported_sha256": "f55fd89a814b451d21427508f875a811fe8d8452f52328155d4d604ddd77835d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_large_n.py",
+      "destination": "baselines/evagent/tests/test_large_n.py",
+      "source_sha256": "18bab062d95e9553f9efbbbccce4c646eeee6c196754311bd84bc6806db3431d",
+      "exported_sha256": "18bab062d95e9553f9efbbbccce4c646eeee6c196754311bd84bc6806db3431d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_manual_recovery.py",
+      "destination": "baselines/evagent/tests/test_manual_recovery.py",
+      "source_sha256": "22a04d9c9a4209610a2d4c4968aae223d67d6995d9eaf84234476fa9090fe95e",
+      "exported_sha256": "22a04d9c9a4209610a2d4c4968aae223d67d6995d9eaf84234476fa9090fe95e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_migrated_anchored_batching.py",
+      "destination": "baselines/evagent/tests/test_migrated_anchored_batching.py",
+      "source_sha256": "dd0d58c97f6f31e5f08773cb441a81e43220fca25a82ada5b32dc7552101f0f6",
+      "exported_sha256": "dd0d58c97f6f31e5f08773cb441a81e43220fca25a82ada5b32dc7552101f0f6",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_migrated_chunked_scoring.py",
+      "destination": "baselines/evagent/tests/test_migrated_chunked_scoring.py",
+      "source_sha256": "25f6a41dc1bc5bd406a90dfac791b625323e0e591a8784256bc4c34e92c532b3",
+      "exported_sha256": "25f6a41dc1bc5bd406a90dfac791b625323e0e591a8784256bc4c34e92c532b3",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_migrated_self_check.py",
+      "destination": "baselines/evagent/tests/test_migrated_self_check.py",
+      "source_sha256": "d6c669042efd8b69312c8748ae784ed45a96c673244214ca7b6e937e293316d9",
+      "exported_sha256": "d6c669042efd8b69312c8748ae784ed45a96c673244214ca7b6e937e293316d9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_offline_ablation.py",
+      "destination": "baselines/evagent/tests/test_offline_ablation.py",
+      "source_sha256": "9b966143fa7869fbf878e00c9d2f5e16661f575569e031976bb2f55024da7ae1",
+      "exported_sha256": "9b966143fa7869fbf878e00c9d2f5e16661f575569e031976bb2f55024da7ae1",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_offline_ablation_auth.py",
+      "destination": "baselines/evagent/tests/test_offline_ablation_auth.py",
+      "source_sha256": "3b752c4dae47386fbf46e2eaffdc175fbffc1192ffa328af6718978582416d62",
+      "exported_sha256": "3b752c4dae47386fbf46e2eaffdc175fbffc1192ffa328af6718978582416d62",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_offline_ablation_features.py",
+      "destination": "baselines/evagent/tests/test_offline_ablation_features.py",
+      "source_sha256": "b751d775ea1c242ddb96cc1142382822b9fb816ec66add80f37f718bf64636cd",
+      "exported_sha256": "b751d775ea1c242ddb96cc1142382822b9fb816ec66add80f37f718bf64636cd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_platinum_ablation.py",
+      "destination": "baselines/evagent/tests/test_platinum_ablation.py",
+      "source_sha256": "755dbefd06748e17c6047100d1203e6f44606cef80e9ec9538bf156e8ba759a1",
+      "exported_sha256": "755dbefd06748e17c6047100d1203e6f44606cef80e9ec9538bf156e8ba759a1",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_ppi_ablation_transport.py",
+      "destination": "baselines/evagent/tests/test_ppi_ablation_transport.py",
+      "source_sha256": "04fb80a0e654bb2b119430786e80f8e6add02cff5111c4ec5850cef3e62fa540",
+      "exported_sha256": "04fb80a0e654bb2b119430786e80f8e6add02cff5111c4ec5850cef3e62fa540",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_ppi_identifier_recovery.py",
+      "destination": "baselines/evagent/tests/test_ppi_identifier_recovery.py",
+      "source_sha256": "e2e19ca6f310646d5c62867886a2dc7187ddcc4df33ca91627dd89f093ede517",
+      "exported_sha256": "e2e19ca6f310646d5c62867886a2dc7187ddcc4df33ca91627dd89f093ede517",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_protein_rna_contact_pro.py",
+      "destination": "baselines/evagent/tests/test_protein_rna_contact_pro.py",
+      "source_sha256": "daf4608d125b4ffe39fb1d2b286225577b1a9aaee7352cb5fa9ba59d3991b783",
+      "exported_sha256": "daf4608d125b4ffe39fb1d2b286225577b1a9aaee7352cb5fa9ba59d3991b783",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_protein_rna_msa_v2.py",
+      "destination": "baselines/evagent/tests/test_protein_rna_msa_v2.py",
+      "source_sha256": "53128331c71032ea0b8f7cf13e3107df54e2e1442410acc0c0fc49b925473245",
+      "exported_sha256": "53128331c71032ea0b8f7cf13e3107df54e2e1442410acc0c0fc49b925473245",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_protein_rna_native_auth.py",
+      "destination": "baselines/evagent/tests/test_protein_rna_native_auth.py",
+      "source_sha256": "2e32a5cad36ad46e6061a2df60e6b215fc2ec2f058865a951c0168cbd2e9b173",
+      "exported_sha256": "2e32a5cad36ad46e6061a2df60e6b215fc2ec2f058865a951c0168cbd2e9b173",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_protein_rna_structure_contact.py",
+      "destination": "baselines/evagent/tests/test_protein_rna_structure_contact.py",
+      "source_sha256": "5911a37041a9159f35b65b4d430fbbea5bf3142212a1970ec3dc2b43f4dd19af",
+      "exported_sha256": "5911a37041a9159f35b65b4d430fbbea5bf3142212a1970ec3dc2b43f4dd19af",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_protein_rna_structure_lean.py",
+      "destination": "baselines/evagent/tests/test_protein_rna_structure_lean.py",
+      "source_sha256": "64b8e04eb034edbb5b329bbda2a40f5daa95f528b31b936591ff0676b8366c10",
+      "exported_sha256": "64b8e04eb034edbb5b329bbda2a40f5daa95f528b31b936591ff0676b8366c10",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_protein_rna_structure_local.py",
+      "destination": "baselines/evagent/tests/test_protein_rna_structure_local.py",
+      "source_sha256": "ae7146fcc2ef8188c3f9cc4e213f0e1d5eca4e539a053cb5e9e8049fc2998308",
+      "exported_sha256": "ae7146fcc2ef8188c3f9cc4e213f0e1d5eca4e539a053cb5e9e8049fc2998308",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_protein_rna_structure_v3.py",
+      "destination": "baselines/evagent/tests/test_protein_rna_structure_v3.py",
+      "source_sha256": "c95b7e2cd17327444ab859cbfc423b5cc3e134366dd05dbc4c15ffbfa05f59e5",
+      "exported_sha256": "c95b7e2cd17327444ab859cbfc423b5cc3e134366dd05dbc4c15ffbfa05f59e5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_reconnect.py",
+      "destination": "baselines/evagent/tests/test_reconnect.py",
+      "source_sha256": "a87854fc2f0e2e3249b5da16842d6b999ce56c1fec7b53f147b979c0eb429eb4",
+      "exported_sha256": "a87854fc2f0e2e3249b5da16842d6b999ce56c1fec7b53f147b979c0eb429eb4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_research_agents.py",
+      "destination": "baselines/evagent/tests/test_research_agents.py",
+      "source_sha256": "88f9df0e9173ffae684b1ac85b054c77b1f4739441552325184440959bfd1bbd",
+      "exported_sha256": "88f9df0e9173ffae684b1ac85b054c77b1f4739441552325184440959bfd1bbd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_research_parallel.py",
+      "destination": "baselines/evagent/tests/test_research_parallel.py",
+      "source_sha256": "70439cb1964cf4b9ae5442fcc1cc5ce7339c58fabff24fb080712a276b58374d",
+      "exported_sha256": "70439cb1964cf4b9ae5442fcc1cc5ce7339c58fabff24fb080712a276b58374d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_simple_structure_v5.py",
+      "destination": "baselines/evagent/tests/test_simple_structure_v5.py",
+      "source_sha256": "db5675695810a02fa011446c3ca304e4e4562e662fae8c43dad80686fd24f1fc",
+      "exported_sha256": "db5675695810a02fa011446c3ca304e4e4562e662fae8c43dad80686fd24f1fc",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_stage_b.py",
+      "destination": "baselines/evagent/tests/test_stage_b.py",
+      "source_sha256": "0786b82c48629ad5f11e3bc825b2001fa256e625e2012169b716b92307e6dc75",
+      "exported_sha256": "0786b82c48629ad5f11e3bc825b2001fa256e625e2012169b716b92307e6dc75",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_stage_b_repro_v4.py",
+      "destination": "baselines/evagent/tests/test_stage_b_repro_v4.py",
+      "source_sha256": "680c7ca5b715a3ff8d446c2ed71147db9c46e4562c27bd0dc5cf01b1e99c967e",
+      "exported_sha256": "680c7ca5b715a3ff8d446c2ed71147db9c46e4562c27bd0dc5cf01b1e99c967e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_structure_expert_tools.py",
+      "destination": "baselines/evagent/tests/test_structure_expert_tools.py",
+      "source_sha256": "ff62a8009667106c06a24e55d06d48204f1832de855a3c086fc0728e79860f60",
+      "exported_sha256": "ff62a8009667106c06a24e55d06d48204f1832de855a3c086fc0728e79860f60",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_structure_only_v5.py",
+      "destination": "baselines/evagent/tests/test_structure_only_v5.py",
+      "source_sha256": "04df501a5bec1042e32662b77026d88ef25c988098dc9d5c96c12c54c1aec2a6",
+      "exported_sha256": "04df501a5bec1042e32662b77026d88ef25c988098dc9d5c96c12c54c1aec2a6",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_structure_probe_v5.py",
+      "destination": "baselines/evagent/tests/test_structure_probe_v5.py",
+      "source_sha256": "005f070603b2b7b8b8b701227654aa49664d9402bcfcc0dcfed9d54a00de7050",
+      "exported_sha256": "005f070603b2b7b8b8b701227654aa49664d9402bcfcc0dcfed9d54a00de7050",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tests/test_structure_v3_features.py",
+      "destination": "baselines/evagent/tests/test_structure_v3_features.py",
+      "source_sha256": "99aba65886105e240042d8f0fe9278f33d11995e68e11ae9750331ab2468eb11",
+      "exported_sha256": "99aba65886105e240042d8f0fe9278f33d11995e68e11ae9750331ab2468eb11",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_pytest.py",
+      "destination": "baselines/evagent/tools/offline_pytest.py",
+      "source_sha256": "e34b6d1bf15878e644c3ba534bc0234b68014a0d19c144aa263b1b9fe9aba1a7",
+      "exported_sha256": "e34b6d1bf15878e644c3ba534bc0234b68014a0d19c144aa263b1b9fe9aba1a7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/fewshot/export_manifest.py",
+      "destination": "baselines/evagent/tools/fewshot/export_manifest.py",
+      "source_sha256": "155454b2c6e24d8c2dcfe190a9a565328647850fabaa7bdf371e9b57f33e0531",
+      "exported_sha256": "155454b2c6e24d8c2dcfe190a9a565328647850fabaa7bdf371e9b57f33e0531",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/fewshot/paired_analysis.py",
+      "destination": "baselines/evagent/tools/fewshot/paired_analysis.py",
+      "source_sha256": "d274e23b93f0bcea0ef94bf94b2029b7aac6fa0f1d58865fe045497a91866dca",
+      "exported_sha256": "d274e23b93f0bcea0ef94bf94b2029b7aac6fa0f1d58865fe045497a91866dca",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/fewshot/test_paired_analysis.py",
+      "destination": "baselines/evagent/tools/fewshot/test_paired_analysis.py",
+      "source_sha256": "c14f1555d831723dbb20b2add8ff60264fd079db888a45196f10e9567cc22d00",
+      "exported_sha256": "c14f1555d831723dbb20b2add8ff60264fd079db888a45196f10e9567cc22d00",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/fewshot_scale/continue_run.py",
+      "destination": "baselines/evagent/tools/fewshot_scale/continue_run.py",
+      "source_sha256": "e9f86ec30c0ba247b6f19f77f205bd1e04d2870c127bcdf9bfc8029095b827e0",
+      "exported_sha256": "e9f86ec30c0ba247b6f19f77f205bd1e04d2870c127bcdf9bfc8029095b827e0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/fewshot_scale/thought_audit.py",
+      "destination": "baselines/evagent/tools/fewshot_scale/thought_audit.py",
+      "source_sha256": "61b2df024067b982511c1e5291f13015f9e453d7bb3b4e090e77f324a9db3afe",
+      "exported_sha256": "61b2df024067b982511c1e5291f13015f9e453d7bb3b4e090e77f324a9db3afe",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/audit_ppi_results.py",
+      "destination": "baselines/evagent/tools/offline_ablation/audit_ppi_results.py",
+      "source_sha256": "168de79b917ce48e63bbe26c20822c749cf72f7cc85d1d5e18ce43c16f0031a7",
+      "exported_sha256": "168de79b917ce48e63bbe26c20822c749cf72f7cc85d1d5e18ce43c16f0031a7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/clone_ppi_thinking_from_medium.py",
+      "destination": "baselines/evagent/tools/offline_ablation/clone_ppi_thinking_from_medium.py",
+      "source_sha256": "833ba94e599b53fc95a4765a6c5928e0aece6799f4239977e2c854310e50363f",
+      "exported_sha256": "833ba94e599b53fc95a4765a6c5928e0aece6799f4239977e2c854310e50363f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/dispatch_frozen.py",
+      "destination": "baselines/evagent/tools/offline_ablation/dispatch_frozen.py",
+      "source_sha256": "69adb25a1b3ed78d27bf1e3dfda4c94ebc20832ea77f2e8ce1151fba94716e41",
+      "exported_sha256": "69adb25a1b3ed78d27bf1e3dfda4c94ebc20832ea77f2e8ce1151fba94716e41",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/execute_frozen.py",
+      "destination": "baselines/evagent/tools/offline_ablation/execute_frozen.py",
+      "source_sha256": "bb3a239ea600ebb97483d1df8e63860bb53de4ea551021d18e237088a6c6be7f",
+      "exported_sha256": "bb3a239ea600ebb97483d1df8e63860bb53de4ea551021d18e237088a6c6be7f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/features.py",
+      "destination": "baselines/evagent/tools/offline_ablation/features.py",
+      "source_sha256": "0e79cd36c7e576e43339b4ee1ca3bb2ef3a3516873eb5265c8b67b795faab0f4",
+      "exported_sha256": "0e79cd36c7e576e43339b4ee1ca3bb2ef3a3516873eb5265c8b67b795faab0f4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/historical_metrics.py",
+      "destination": "baselines/evagent/tools/offline_ablation/historical_metrics.py",
+      "source_sha256": "a95a3436dc410d89de6e8103090f51fe8e16a3b41aa378ed44c63b9187a84c76",
+      "exported_sha256": "a95a3436dc410d89de6e8103090f51fe8e16a3b41aa378ed44c63b9187a84c76",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/ligand_features.py",
+      "destination": "baselines/evagent/tools/offline_ablation/ligand_features.py",
+      "source_sha256": "88978a6bb640ff4515e61aa58d86c36183e4079733c72a26587a00dc06693dd9",
+      "exported_sha256": "88978a6bb640ff4515e61aa58d86c36183e4079733c72a26587a00dc06693dd9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/platinum.py",
+      "destination": "baselines/evagent/tools/offline_ablation/platinum.py",
+      "source_sha256": "2a0f5d34b1240b36a90d230ce35cb2f01ffd0a6c67f6f636a19cdaf2a0e4e556",
+      "exported_sha256": "2a0f5d34b1240b36a90d230ce35cb2f01ffd0a6c67f6f636a19cdaf2a0e4e556",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/platinum_flash38_thinking_same7.py",
+      "destination": "baselines/evagent/tools/offline_ablation/platinum_flash38_thinking_same7.py",
+      "source_sha256": "5b2045b2a8e671d68e76572e5efa60db209f21cb41eba8082f4151e1413d8ab8",
+      "exported_sha256": "5b2045b2a8e671d68e76572e5efa60db209f21cb41eba8082f4151e1413d8ab8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/platinum_pro31_same7.py",
+      "destination": "baselines/evagent/tools/offline_ablation/platinum_pro31_same7.py",
+      "source_sha256": "81bd7c31f245b6b4307c4ad1ec22c7ac8ece79744decd57d48df5ec19cc7ba34",
+      "exported_sha256": "81bd7c31f245b6b4307c4ad1ec22c7ac8ece79744decd57d48df5ec19cc7ba34",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/prepare_completion_retry.py",
+      "destination": "baselines/evagent/tools/offline_ablation/prepare_completion_retry.py",
+      "source_sha256": "d53397161d2b5c9cd1d5c06a2b349449f3bbf3546edcc677e93b3e4cbf6a7c02",
+      "exported_sha256": "d53397161d2b5c9cd1d5c06a2b349449f3bbf3546edcc677e93b3e4cbf6a7c02",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_dna.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_dna.py",
+      "source_sha256": "c2fd3226bbef43718db408b2e194580e287c778b692b2f6da19f765e418cadd4",
+      "exported_sha256": "c2fd3226bbef43718db408b2e194580e287c778b692b2f6da19f765e418cadd4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_dna_input_all22_20261014.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_dna_input_all22_20261014.py",
+      "source_sha256": "d22b3eb2608bd712657c901e293ad9d836daeb59b3c4014eb0b570c13f802a05",
+      "exported_sha256": "d22b3eb2608bd712657c901e293ad9d836daeb59b3c4014eb0b570c13f802a05",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_dna_input_patch_20261011.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_dna_input_patch_20261011.py",
+      "source_sha256": "c1487fe64c185c101a2bb082ffe372f8b3566b364563fe159b10baca5534c821",
+      "exported_sha256": "c1487fe64c185c101a2bb082ffe372f8b3566b364563fe159b10baca5534c821",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_rna.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_rna.py",
+      "source_sha256": "501bfa984e80dd8bdb4b163f276a10d9b52781b5d6a4654a7c1eec5fe27f7ecf",
+      "exported_sha256": "501bfa984e80dd8bdb4b163f276a10d9b52781b5d6a4654a7c1eec5fe27f7ecf",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_rna_contact_high_prompt_bound.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_rna_contact_high_prompt_bound.py",
+      "source_sha256": "b0f4dffb30a0a4200bc84815c91d547816e5969b86af5de671134caac16fcc25",
+      "exported_sha256": "b0f4dffb30a0a4200bc84815c91d547816e5969b86af5de671134caac16fcc25",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_rna_contact_pro.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_rna_contact_pro.py",
+      "source_sha256": "e5e9f68aa5aee30871ae9271b86f69079ce0af2001444570e5fb22c924142f74",
+      "exported_sha256": "e5e9f68aa5aee30871ae9271b86f69079ce0af2001444570e5fb22c924142f74",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_rna_contact_thinking.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_rna_contact_thinking.py",
+      "source_sha256": "d8cec02a7fe3e1e97686d4748c24285457221d13874dffef0192abf833169afe",
+      "exported_sha256": "d8cec02a7fe3e1e97686d4748c24285457221d13874dffef0192abf833169afe",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_rna_structure_contact.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_rna_structure_contact.py",
+      "source_sha256": "9631d7e321945685c4f00f6fec9cf198e55634390c8785b411e49e772600684e",
+      "exported_sha256": "9631d7e321945685c4f00f6fec9cf198e55634390c8785b411e49e772600684e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_rna_structure_lean.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_rna_structure_lean.py",
+      "source_sha256": "ec020dee2d2354fd509d838fe60b270204a6146bcbacbd60694adeec924f67d0",
+      "exported_sha256": "ec020dee2d2354fd509d838fe60b270204a6146bcbacbd60694adeec924f67d0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_rna_structure_local.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_rna_structure_local.py",
+      "source_sha256": "59ad60c2169599ae72de7fec5ab16591ecaf99344475ed58cf83e0d38035eac9",
+      "exported_sha256": "59ad60c2169599ae72de7fec5ab16591ecaf99344475ed58cf83e0d38035eac9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_rna_structure_v3.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_rna_structure_v3.py",
+      "source_sha256": "01fb5566bb00452806821efa345efdc26c5ed0647e30d9ed53a274fddf6b68d6",
+      "exported_sha256": "01fb5566bb00452806821efa345efdc26c5ed0647e30d9ed53a274fddf6b68d6",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/protein_rna_v2.py",
+      "destination": "baselines/evagent/tools/offline_ablation/protein_rna_v2.py",
+      "source_sha256": "77cec2304e04b0334cba852ce5c59b2c737b644cd62b794751e4bbca71cd7003",
+      "exported_sha256": "77cec2304e04b0334cba852ce5c59b2c737b644cd62b794751e4bbca71cd7003",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/recover_identifier_prefix.py",
+      "destination": "baselines/evagent/tools/offline_ablation/recover_identifier_prefix.py",
+      "source_sha256": "484d51f9ba20c7d2c849d7c8d6d33bbe6fa9d0b0ec1ca2ac7abd0fbdec4debe0",
+      "exported_sha256": "484d51f9ba20c7d2c849d7c8d6d33bbe6fa9d0b0ec1ca2ac7abd0fbdec4debe0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/recover_ppi_high_deadline_20261010.py",
+      "destination": "baselines/evagent/tools/offline_ablation/recover_ppi_high_deadline_20261010.py",
+      "source_sha256": "67a64d7830dea28f6d5d8f5f19e3c449d61fcad36209d6adab27533ce42838e5",
+      "exported_sha256": "67a64d7830dea28f6d5d8f5f19e3c449d61fcad36209d6adab27533ce42838e5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/resume_ppi_native_sequence.py",
+      "destination": "baselines/evagent/tools/offline_ablation/resume_ppi_native_sequence.py",
+      "source_sha256": "74d6c7bd4e40078e64315be755923cd5ab21f486f922322664c17b511d66a75c",
+      "exported_sha256": "74d6c7bd4e40078e64315be755923cd5ab21f486f922322664c17b511d66a75c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/resume_structure_v3_sandbox.py",
+      "destination": "baselines/evagent/tools/offline_ablation/resume_structure_v3_sandbox.py",
+      "source_sha256": "2bb9cc5957262da79351f2b725dd5f6957b248fa7e5d7f0fcb90c34ac1d97b6d",
+      "exported_sha256": "2bb9cc5957262da79351f2b725dd5f6957b248fa7e5d7f0fcb90c34ac1d97b6d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/rna_features.py",
+      "destination": "baselines/evagent/tools/offline_ablation/rna_features.py",
+      "source_sha256": "c9e54ae5a7a497b0f7eb3d8531983f553f0b2679aa76ccf5a6a83c2769afef04",
+      "exported_sha256": "c9e54ae5a7a497b0f7eb3d8531983f553f0b2679aa76ccf5a6a83c2769afef04",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/run.py",
+      "destination": "baselines/evagent/tools/offline_ablation/run.py",
+      "source_sha256": "506fc4d1c568e6f493e9c73b8b18c4e0d9ae02a2942cbb717e37df90e634f578",
+      "exported_sha256": "506fc4d1c568e6f493e9c73b8b18c4e0d9ae02a2942cbb717e37df90e634f578",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/structure_v3.py",
+      "destination": "baselines/evagent/tools/offline_ablation/structure_v3.py",
+      "source_sha256": "b09d7b333f642582b972536e21570d59934f48c02a69ea15d07bb4a57b18c8a6",
+      "exported_sha256": "b09d7b333f642582b972536e21570d59934f48c02a69ea15d07bb4a57b18c8a6",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/structure_v3_features.py",
+      "destination": "baselines/evagent/tools/offline_ablation/structure_v3_features.py",
+      "source_sha256": "d40b9eebda1be29acf9d3e6c9febb7e82560b1d19bfa2d3763a8870ae6cead55",
+      "exported_sha256": "d40b9eebda1be29acf9d3e6c9febb7e82560b1d19bfa2d3763a8870ae6cead55",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/validate_prompts.py",
+      "destination": "baselines/evagent/tools/offline_ablation/validate_prompts.py",
+      "source_sha256": "16641dfddf62a1ffab91f1c162044bc6991b330a3dded2a96b5afaaf3ad9eaa0",
+      "exported_sha256": "16641dfddf62a1ffab91f1c162044bc6991b330a3dded2a96b5afaaf3ad9eaa0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/tools/offline_ablation/watch_ppi_high_deadline_20261010.py",
+      "destination": "baselines/evagent/tools/offline_ablation/watch_ppi_high_deadline_20261010.py",
+      "source_sha256": "8cea003a636ac9bb349b31afa4f650908d1611325dce3d32e698d5eca9fbf5ce",
+      "exported_sha256": "8cea003a636ac9bb349b31afa4f650908d1611325dce3d32e698d5eca9fbf5ce",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/af3_worker.py",
+      "destination": "baselines/evagent/work/stage_b/af3_worker.py",
+      "source_sha256": "aead3d707fbd48e9a236367c5eb937bedbdfca428c721bce6e425a9fd10dff11",
+      "exported_sha256": "aead3d707fbd48e9a236367c5eb937bedbdfca428c721bce6e425a9fd10dff11",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/collect_literature_v3.py",
+      "destination": "baselines/evagent/work/stage_b/collect_literature_v3.py",
+      "source_sha256": "8e18f8f73c85f02f3387658645044f28713e2d7b3486af2f97c08a5686c842cb",
+      "exported_sha256": "8e18f8f73c85f02f3387658645044f28713e2d7b3486af2f97c08a5686c842cb",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/collect_public.py",
+      "destination": "baselines/evagent/work/stage_b/collect_public.py",
+      "source_sha256": "5f9ec8f9af42a423e5ef8d20ca371a2243c7c390d3fd90a02942ede7bf75e4cb",
+      "exported_sha256": "5f9ec8f9af42a423e5ef8d20ca371a2243c7c390d3fd90a02942ede7bf75e4cb",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/expand_msa.py",
+      "destination": "baselines/evagent/work/stage_b/expand_msa.py",
+      "source_sha256": "d4081728bfd6c922a8e7ed5f5b3ca2903097227a83d17d34814e5e8ed805a515",
+      "exported_sha256": "d4081728bfd6c922a8e7ed5f5b3ca2903097227a83d17d34814e5e8ed805a515",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/freeze_campaign.py",
+      "destination": "baselines/evagent/work/stage_b/freeze_campaign.py",
+      "source_sha256": "d0e9f5a8d25c4e45e3aed3846a6691f15fa315225e983888f68451590f2480b0",
+      "exported_sha256": "d0e9f5a8d25c4e45e3aed3846a6691f15fa315225e983888f68451590f2480b0",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/freeze_revision_v3.py",
+      "destination": "baselines/evagent/work/stage_b/freeze_revision_v3.py",
+      "source_sha256": "63ad4b483828ef8cc20ed4f7a51c70d58ebdc2b4bbafa95aa3ab0cfa289f7f33",
+      "exported_sha256": "63ad4b483828ef8cc20ed4f7a51c70d58ebdc2b4bbafa95aa3ab0cfa289f7f33",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/prepare_inputs.py",
+      "destination": "baselines/evagent/work/stage_b/prepare_inputs.py",
+      "source_sha256": "ef21609e898f7cf8ecfaea0a2f070a137565af92c781999bdc1fa19ee0daca4a",
+      "exported_sha256": "ef21609e898f7cf8ecfaea0a2f070a137565af92c781999bdc1fa19ee0daca4a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/reproducible_v4/freeze.py",
+      "destination": "baselines/evagent/work/stage_b/reproducible_v4/freeze.py",
+      "source_sha256": "3c51415834aad54e9ad4b1aa9dc4931096937e1e7cd341ca91fa781e1c9973e8",
+      "exported_sha256": "3c51415834aad54e9ad4b1aa9dc4931096937e1e7cd341ca91fa781e1c9973e8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/reproducible_v4/gateway.py",
+      "destination": "baselines/evagent/work/stage_b/reproducible_v4/gateway.py",
+      "source_sha256": "f8674efe77e79caed804275fcae7c396ed5eee1ae518f1da3188ce230feb230a",
+      "exported_sha256": "f8674efe77e79caed804275fcae7c396ed5eee1ae518f1da3188ce230feb230a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/reproducible_v4/runner.py",
+      "destination": "baselines/evagent/work/stage_b/reproducible_v4/runner.py",
+      "source_sha256": "50fa4831e6a8807510f158b9d226e5a0f6aa97a9315fd3bf3a2b624310dfa807",
+      "exported_sha256": "50fa4831e6a8807510f158b9d226e5a0f6aa97a9315fd3bf3a2b624310dfa807",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/revise_output_limit.py",
+      "destination": "baselines/evagent/work/stage_b/revise_output_limit.py",
+      "source_sha256": "078620d58982474b39a7be5de9b45ec39729be2bd4282327a301e9252d4ae3dc",
+      "exported_sha256": "078620d58982474b39a7be5de9b45ec39729be2bd4282327a301e9252d4ae3dc",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/rfam_prepare.py",
+      "destination": "baselines/evagent/work/stage_b/rfam_prepare.py",
+      "source_sha256": "462a5fd20c7b2729408dd909eba240ed17afefd07bd4185a0560eff59aa0dee6",
+      "exported_sha256": "462a5fd20c7b2729408dd909eba240ed17afefd07bd4185a0560eff59aa0dee6",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/run_campaign.py",
+      "destination": "baselines/evagent/work/stage_b/run_campaign.py",
+      "source_sha256": "cb0cad7e529ff8a379d5d24f54b9be071a33b7ea2b8c4ba67bb1460fabf8729a",
+      "exported_sha256": "cb0cad7e529ff8a379d5d24f54b9be071a33b7ea2b8c4ba67bb1460fabf8729a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/secondary_worker.py",
+      "destination": "baselines/evagent/work/stage_b/secondary_worker.py",
+      "source_sha256": "e5091b5b47e59383e065e5897a5e89ab5aa97b09aeeeb5c9c1e3ca13f9ab6196",
+      "exported_sha256": "e5091b5b47e59383e065e5897a5e89ab5aa97b09aeeeb5c9c1e3ca13f9ab6196",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/simple_structure_v5/launch.py",
+      "destination": "baselines/evagent/work/stage_b/simple_structure_v5/launch.py",
+      "source_sha256": "35c24c885c6ad9bbeb880fe30ada39c902160116877549e4c972063d02093d49",
+      "exported_sha256": "35c24c885c6ad9bbeb880fe30ada39c902160116877549e4c972063d02093d49",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/simple_structure_v5/prepare.py",
+      "destination": "baselines/evagent/work/stage_b/simple_structure_v5/prepare.py",
+      "source_sha256": "a07fc088d4c4e159deb8c45850d5064bbfb73ea88686dd310a9e40fc15522f16",
+      "exported_sha256": "a07fc088d4c4e159deb8c45850d5064bbfb73ea88686dd310a9e40fc15522f16",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/simple_structure_v5/probe.py",
+      "destination": "baselines/evagent/work/stage_b/simple_structure_v5/probe.py",
+      "source_sha256": "2f369c26cc82aa7aebe8774215ec9a4e1dba6bd19adb37b664ab68059d1c343e",
+      "exported_sha256": "2f369c26cc82aa7aebe8774215ec9a4e1dba6bd19adb37b664ab68059d1c343e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/simple_structure_v5/structure_only.py",
+      "destination": "baselines/evagent/work/stage_b/simple_structure_v5/structure_only.py",
+      "source_sha256": "6b8dd1a66a695ff6017fa39c2676887a2db586cd102396f402c552ed622efd1d",
+      "exported_sha256": "6b8dd1a66a695ff6017fa39c2676887a2db586cd102396f402c552ed622efd1d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/structure_probe_v5/diagnose.py",
+      "destination": "baselines/evagent/work/stage_b/structure_probe_v5/diagnose.py",
+      "source_sha256": "616e8454a3fdf89854268da4c6b55950df6cb22b34182023b74b4a2e9188f3a8",
+      "exported_sha256": "616e8454a3fdf89854268da4c6b55950df6cb22b34182023b74b4a2e9188f3a8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/structure_probe_v5/launch.py",
+      "destination": "baselines/evagent/work/stage_b/structure_probe_v5/launch.py",
+      "source_sha256": "d7da34e96076942aa296021e5feda2298af4f0342f3eca57464b64d68c84cf25",
+      "exported_sha256": "d7da34e96076942aa296021e5feda2298af4f0342f3eca57464b64d68c84cf25",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/structure_probe_v5/probe.py",
+      "destination": "baselines/evagent/work/stage_b/structure_probe_v5/probe.py",
+      "source_sha256": "5afae6dab9e7ef993e2a5236a7941ba7ab5b77c3052714eff2deebe9dfd3984c",
+      "exported_sha256": "5afae6dab9e7ef993e2a5236a7941ba7ab5b77c3052714eff2deebe9dfd3984c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/stage_b/validate_revision_v3.py",
+      "destination": "baselines/evagent/work/stage_b/validate_revision_v3.py",
+      "source_sha256": "e3458fa4658f821eccb84feab092180efba14cec423637a3254e1eb8e14cc62e",
+      "exported_sha256": "e3458fa4658f821eccb84feab092180efba14cec423637a3254e1eb8e14cc62e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v4/check_native_api.py",
+      "destination": "baselines/evagent/work/multiagent_v4/check_native_api.py",
+      "source_sha256": "bd3820938bfaae215f1677e1cb78c62101a87f9a8bdb63b4c322f6f3cdf9cf0f",
+      "exported_sha256": "bd3820938bfaae215f1677e1cb78c62101a87f9a8bdb63b4c322f6f3cdf9cf0f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v4/check_scientific_schema.py",
+      "destination": "baselines/evagent/work/multiagent_v4/check_scientific_schema.py",
+      "source_sha256": "94bf39ad8d8bbc344efba02d5dcfdae16a377ca279c4628d1a9eec4758f6dc18",
+      "exported_sha256": "94bf39ad8d8bbc344efba02d5dcfdae16a377ca279c4628d1a9eec4758f6dc18",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v4/freeze_campaign.py",
+      "destination": "baselines/evagent/work/multiagent_v4/freeze_campaign.py",
+      "source_sha256": "9ea2beb64b750eaf254f090ac5bb41f6627d983d61637ccc4fa5f60ca3d2815c",
+      "exported_sha256": "9ea2beb64b750eaf254f090ac5bb41f6627d983d61637ccc4fa5f60ca3d2815c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v4/prepare_evidence.py",
+      "destination": "baselines/evagent/work/multiagent_v4/prepare_evidence.py",
+      "source_sha256": "d90a3b7a93f2ed13b1b294673d2a31bbb3db806615f61e94168c1be2fb4ad2b5",
+      "exported_sha256": "d90a3b7a93f2ed13b1b294673d2a31bbb3db806615f61e94168c1be2fb4ad2b5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v4/status.py",
+      "destination": "baselines/evagent/work/multiagent_v4/status.py",
+      "source_sha256": "934dc9231ec418cdfbd939c475f6fb6ad7c436e5c2f9076dde723f324e66d98a",
+      "exported_sha256": "934dc9231ec418cdfbd939c475f6fb6ad7c436e5c2f9076dde723f324e66d98a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/check_json_tools.py",
+      "destination": "baselines/evagent/work/multiagent_v1/check_json_tools.py",
+      "source_sha256": "5b744cdc20a424a48d97d2d4e0ecd0679c63f776fc095a1e9d730a7f3dc350dd",
+      "exported_sha256": "5b744cdc20a424a48d97d2d4e0ecd0679c63f776fc095a1e9d730a7f3dc350dd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/check_transport.py",
+      "destination": "baselines/evagent/work/multiagent_v1/check_transport.py",
+      "source_sha256": "0645bc6d88b712a1c7f7e12e630e08ea3dda441849b565400425259c18db58b3",
+      "exported_sha256": "0645bc6d88b712a1c7f7e12e630e08ea3dda441849b565400425259c18db58b3",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/enrich_literature.py",
+      "destination": "baselines/evagent/work/multiagent_v1/enrich_literature.py",
+      "source_sha256": "71b26ce6ddacfc92c41ef855f33a3fe76d499c0d325db9d8522cedc7d071b1d6",
+      "exported_sha256": "71b26ce6ddacfc92c41ef855f33a3fe76d499c0d325db9d8522cedc7d071b1d6",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/finalize.py",
+      "destination": "baselines/evagent/work/multiagent_v1/finalize.py",
+      "source_sha256": "eeca608160b6a1cca87c874c3d7b1390892cd7f2efb0ff554bfc573c2f8a9b5f",
+      "exported_sha256": "eeca608160b6a1cca87c874c3d7b1390892cd7f2efb0ff554bfc573c2f8a9b5f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/freeze.py",
+      "destination": "baselines/evagent/work/multiagent_v1/freeze.py",
+      "source_sha256": "26ab0308e32ba6cd557d0d49add3de4282d25c484ded2a3106f8c3a203d7149d",
+      "exported_sha256": "26ab0308e32ba6cd557d0d49add3de4282d25c484ded2a3106f8c3a203d7149d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/freeze_bounded_retry.py",
+      "destination": "baselines/evagent/work/multiagent_v1/freeze_bounded_retry.py",
+      "source_sha256": "0ce4b33f19eec50df9f4c0efc7762b943c1e7629ff58384b04c3781e46f1e606",
+      "exported_sha256": "0ce4b33f19eec50df9f4c0efc7762b943c1e7629ff58384b04c3781e46f1e606",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/freeze_native_tools.py",
+      "destination": "baselines/evagent/work/multiagent_v1/freeze_native_tools.py",
+      "source_sha256": "a86db1c621ad0298357840f68a8a853e07f55ee696708b2d73d4423c3ebb53c7",
+      "exported_sha256": "a86db1c621ad0298357840f68a8a853e07f55ee696708b2d73d4423c3ebb53c7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/freeze_parallel_restart.py",
+      "destination": "baselines/evagent/work/multiagent_v1/freeze_parallel_restart.py",
+      "source_sha256": "3709e879e63078d8ca9b834a5fcaf07bfa382c0ae55201321d18d3ef8bbf6407",
+      "exported_sha256": "3709e879e63078d8ca9b834a5fcaf07bfa382c0ae55201321d18d3ef8bbf6407",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/freeze_protocol_fix.py",
+      "destination": "baselines/evagent/work/multiagent_v1/freeze_protocol_fix.py",
+      "source_sha256": "f5131c6b596a21bb9a3be0b552bc9b7d1ccb81ae37aa1bbe0bd70e2a2b2f76fa",
+      "exported_sha256": "f5131c6b596a21bb9a3be0b552bc9b7d1ccb81ae37aa1bbe0bd70e2a2b2f76fa",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/freeze_recovery.py",
+      "destination": "baselines/evagent/work/multiagent_v1/freeze_recovery.py",
+      "source_sha256": "685a7dbb76fac8feee20ccb187546273e73b64ade0e5e602f4fb898a576962df",
+      "exported_sha256": "685a7dbb76fac8feee20ccb187546273e73b64ade0e5e602f4fb898a576962df",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/run.py",
+      "destination": "baselines/evagent/work/multiagent_v1/run.py",
+      "source_sha256": "12af78680664370755cc18b7582ffa6bed1f7ceb7c6f751bb5c59f7a3e8ee247",
+      "exported_sha256": "12af78680664370755cc18b7582ffa6bed1f7ceb7c6f751bb5c59f7a3e8ee247",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/work/multiagent_v1/validate_structure_expert.py",
+      "destination": "baselines/evagent/work/multiagent_v1/validate_structure_expert.py",
+      "source_sha256": "7781aa982f06d35b21633bc4f80b2b868c65de660e5ff442a5d69f610d48a60d",
+      "exported_sha256": "7781aa982f06d35b21633bc4f80b2b868c65de660e5ff442a5d69f610d48a60d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/pyproject.toml",
+      "destination": "baselines/evagent/pyproject.toml",
+      "source_sha256": "2851afea70b43c4cc962703538e7c65cb7e6e127484e537f0bcb95ca7eb0e0cb",
+      "exported_sha256": "2851afea70b43c4cc962703538e7c65cb7e6e127484e537f0bcb95ca7eb0e0cb",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/knowledge/fitness_prediction_skill.md",
+      "destination": "baselines/evagent/evagent/integrated/knowledge/fitness_prediction_skill.md",
+      "source_sha256": "c42cda6c430e557a7eee082fa57f9a0f609dbc8c47fc91c866c2c4f53e1b021c",
+      "exported_sha256": "c42cda6c430e557a7eee082fa57f9a0f609dbc8c47fc91c866c2c4f53e1b021c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/knowledge/RNAGYM.md",
+      "destination": "baselines/evagent/evagent/integrated/knowledge/RNAGYM.md",
+      "source_sha256": "7b7dbdc4962f641ed6d51e3ec19e88aed9b46c0adad539d899be774d21f6ee05",
+      "exported_sha256": "7b7dbdc4962f641ed6d51e3ec19e88aed9b46c0adad539d899be774d21f6ee05",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/knowledge/literature/fitness_evidence_v1.json",
+      "destination": "baselines/evagent/evagent/integrated/knowledge/literature/fitness_evidence_v1.json",
+      "source_sha256": "3c8dc190187eab6daa83f863c9fb78acc968c41c6bce687de87a276f3b0c471b",
+      "exported_sha256": "3c8dc190187eab6daa83f863c9fb78acc968c41c6bce687de87a276f3b0c471b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/evagent/integrated/knowledge/structures/SOURCE.json",
+      "destination": "baselines/evagent/evagent/integrated/knowledge/structures/SOURCE.json",
+      "source_sha256": "3a5a5531e454065d201757de5ee331eebc85d3867220fb1387a47e10d18d134c",
+      "exported_sha256": "3a5a5531e454065d201757de5ee331eebc85d3867220fb1387a47e10d18d134c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/examples/gemini_flash_medium_seed42.json",
+      "destination": "baselines/evagent/examples/gemini_flash_medium_seed42.json",
+      "source_sha256": "6235fc615525620b6e79250c623fe0ca870ab63b3da1a262e41b729bd6ef4fff",
+      "exported_sha256": "6235fc615525620b6e79250c623fe0ca870ab63b3da1a262e41b729bd6ef4fff",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/examples/gemini_flash_medium_seed42_nonstream.json",
+      "destination": "baselines/evagent/examples/gemini_flash_medium_seed42_nonstream.json",
+      "source_sha256": "cbfd281391ec9ef10808c07678cbdb6e0ab083cf8c906723b0a6f6e38a618d69",
+      "exported_sha256": "cbfd281391ec9ef10808c07678cbdb6e0ab083cf8c906723b0a6f6e38a618d69",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/examples/integrated/cr_direct.json",
+      "destination": "baselines/evagent/examples/cr_direct.json",
+      "source_sha256": "5cab9c5539ff0544c18c231ed6c51943985dba450e3952da615487715b367bf2",
+      "exported_sha256": "5cab9c5539ff0544c18c231ed6c51943985dba450e3952da615487715b367bf2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/examples/integrated/synthetic_sample.json",
+      "destination": "baselines/evagent/examples/synthetic_sample.json",
+      "source_sha256": "4b200bfcb85082cfa9bb4f5f3d85c969ddfeea3ce2cff962a6e0155d88810eb5",
+      "exported_sha256": "4b200bfcb85082cfa9bb4f5f3d85c969ddfeea3ce2cff962a6e0155d88810eb5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "code/examples/integrated/synthetic_context.json",
+      "destination": "baselines/evagent/examples/synthetic_context.json",
+      "source_sha256": "f822620c455ec28e9ebf8f5cb28710ba9b352c3e313e48e17b781d4251b0d561",
+      "exported_sha256": "f822620c455ec28e9ebf8f5cb28710ba9b352c3e313e48e17b781d4251b0d561",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/admet_protocol.py",
+      "destination": "protocols/zeroshot/admet_protocol.py",
+      "source_sha256": "e3c484d7fb7ae9df8bc37461c5b931c73f1b5a1955271aab536bc13d8c208f80",
+      "exported_sha256": "e3c484d7fb7ae9df8bc37461c5b931c73f1b5a1955271aab536bc13d8c208f80",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/admet_protocol_v2.py",
+      "destination": "protocols/zeroshot/admet_protocol_v2.py",
+      "source_sha256": "cc2d56e31bb74487e0236ab12c432c6baeac8c8e1bd2370f8ca7d0af671878d5",
+      "exported_sha256": "cc2d56e31bb74487e0236ab12c432c6baeac8c8e1bd2370f8ca7d0af671878d5",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/deepseek_official_transport.py",
+      "destination": "protocols/zeroshot/deepseek_official_transport.py",
+      "source_sha256": "f2d7ad0f94e0c3adffaa7e7a5e0bd7fcbd2c434754183fa2e42e75015fb594e4",
+      "exported_sha256": "f2d7ad0f94e0c3adffaa7e7a5e0bd7fcbd2c434754183fa2e42e75015fb594e4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/evaluate_monomer_msa.py",
+      "destination": "protocols/zeroshot/evaluate_monomer_msa.py",
+      "source_sha256": "addf9eab9f428b883323189e27398bdd49c3e6dc93dc21aea2186e80b457ed9c",
+      "exported_sha256": "addf9eab9f428b883323189e27398bdd49c3e6dc93dc21aea2186e80b457ed9c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/evaluate_monomers.py",
+      "destination": "protocols/zeroshot/evaluate_monomers.py",
+      "source_sha256": "aa15f5e2d3da75a2bbfb27abd6a172f61cc2546e48bc3d5f5c965a732808e463",
+      "exported_sha256": "aa15f5e2d3da75a2bbfb27abd6a172f61cc2546e48bc3d5f5c965a732808e463",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/evaluate_single_molecule.py",
+      "destination": "protocols/zeroshot/evaluate_single_molecule.py",
+      "source_sha256": "6f7666e3227d6f28e7514398c86bc5d2ea73df54fb50c3e5b749717dcb3102a2",
+      "exported_sha256": "6f7666e3227d6f28e7514398c86bc5d2ea73df54fb50c3e5b749717dcb3102a2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/frozen_prompt_bundle.py",
+      "destination": "protocols/zeroshot/frozen_prompt_bundle.py",
+      "source_sha256": "832de38b8b9d2a42a4a8aa90d01a23df816ad492741968030a315d48bcff4afb",
+      "exported_sha256": "832de38b8b9d2a42a4a8aa90d01a23df816ad492741968030a315d48bcff4afb",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/monomer_campaign.py",
+      "destination": "protocols/zeroshot/monomer_campaign.py",
+      "source_sha256": "4cf12a2324d3acf59873838e1880f7d494553f5c704abcfcf5ed7c220ad0c79d",
+      "exported_sha256": "4cf12a2324d3acf59873838e1880f7d494553f5c704abcfcf5ed7c220ad0c79d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/monomer_integrity.py",
+      "destination": "protocols/zeroshot/monomer_integrity.py",
+      "source_sha256": "1e6a070ddbefa2a3ae849cff25771f88f4fd21c620fcbd463dca8fc08fc2fa0e",
+      "exported_sha256": "1e6a070ddbefa2a3ae849cff25771f88f4fd21c620fcbd463dca8fc08fc2fa0e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/monomer_sequence_semantics_v3.py",
+      "destination": "protocols/zeroshot/monomer_sequence_semantics_v3.py",
+      "source_sha256": "fefc824d37514fc6e60aa38c8311974ca7ea06313becee25fadb689baa23d471",
+      "exported_sha256": "fefc824d37514fc6e60aa38c8311974ca7ea06313becee25fadb689baa23d471",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/msa_missingness.py",
+      "destination": "protocols/zeroshot/msa_missingness.py",
+      "source_sha256": "ad54eb5899c7746b07e54b3ab3339a73e3ff9e5ffb0ee32f36ab3868c5ce3fb2",
+      "exported_sha256": "ad54eb5899c7746b07e54b3ab3339a73e3ff9e5ffb0ee32f36ab3868c5ce3fb2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/multillm_campaign.py",
+      "destination": "protocols/zeroshot/multillm_campaign.py",
+      "source_sha256": "f8220d42f347a428cd6e2b0908a3fea70abe3ba09014b0da9eeb6bf7f74ab560",
+      "exported_sha256": "f8220d42f347a428cd6e2b0908a3fea70abe3ba09014b0da9eeb6bf7f74ab560",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/multillm_supervise.py",
+      "destination": "protocols/zeroshot/multillm_supervise.py",
+      "source_sha256": "938d77bc6b298b727cdfe84de752e7ed9282330b63be440d9a6cf33e17e2b026",
+      "exported_sha256": "938d77bc6b298b727cdfe84de752e7ed9282330b63be440d9a6cf33e17e2b026",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/multillm_transport.py",
+      "destination": "protocols/zeroshot/multillm_transport.py",
+      "source_sha256": "ca5e21e6254c7b8faee5f6b2cac017307f3a8e1390bb0ddf078615075f26fa21",
+      "exported_sha256": "ca5e21e6254c7b8faee5f6b2cac017307f3a8e1390bb0ddf078615075f26fa21",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/prepare_monomer_sequences.py",
+      "destination": "protocols/zeroshot/prepare_monomer_sequences.py",
+      "source_sha256": "8b7b1603216440ac827c6159733505cec636817a86d378f8261f7f84d4736e8d",
+      "exported_sha256": "8b7b1603216440ac827c6159733505cec636817a86d378f8261f7f84d4736e8d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/prepare_ppi_missingness.py",
+      "destination": "protocols/zeroshot/prepare_ppi_missingness.py",
+      "source_sha256": "d73268437d3bb4c1a4dcc51cf3039f2aef7c833c0c5ce3bb5adc4db234d8bbb9",
+      "exported_sha256": "d73268437d3bb4c1a4dcc51cf3039f2aef7c833c0c5ce3bb5adc4db234d8bbb9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/prepare_protein_rna_contact.py",
+      "destination": "protocols/zeroshot/prepare_protein_rna_contact.py",
+      "source_sha256": "d73cdf804845a7ebc813264499929742ad5f423e3c617e16b9a8dc43836968c1",
+      "exported_sha256": "d73cdf804845a7ebc813264499929742ad5f423e3c617e16b9a8dc43836968c1",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/prepare_shared_prompts.py",
+      "destination": "protocols/zeroshot/prepare_shared_prompts.py",
+      "source_sha256": "1958f703a5a137e8ea9d33b311b8fc7e54ac209ec0f0b82fa252696561c288f6",
+      "exported_sha256": "1958f703a5a137e8ea9d33b311b8fc7e54ac209ec0f0b82fa252696561c288f6",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/prepare_singlechain.py",
+      "destination": "protocols/zeroshot/prepare_singlechain.py",
+      "source_sha256": "59fb61975ec46799fde327101f35e4c0d22c8f8ef7a7862468c784bc394f85ce",
+      "exported_sha256": "59fb61975ec46799fde327101f35e4c0d22c8f8ef7a7862468c784bc394f85ce",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/prompt_semantics.py",
+      "destination": "protocols/zeroshot/prompt_semantics.py",
+      "source_sha256": "6f5f096427e35234847da8d7ba5a1f5814e1da1917353a2dcdb0114fcab9f0b2",
+      "exported_sha256": "6f5f096427e35234847da8d7ba5a1f5814e1da1917353a2dcdb0114fcab9f0b2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/protein_msa_guard.py",
+      "destination": "protocols/zeroshot/protein_msa_guard.py",
+      "source_sha256": "4bd1883013143c81e57df4e6d4fe3a60d8c469a4e7f4ff53ecec5ffa18f6dc44",
+      "exported_sha256": "4bd1883013143c81e57df4e6d4fe3a60d8c469a4e7f4ff53ecec5ffa18f6dc44",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/revalidate_campaign.py",
+      "destination": "protocols/zeroshot/revalidate_campaign.py",
+      "source_sha256": "c43dda0360a6803fdb34e1042e43b9474492f9e9fb1c077b01418e5854a93c7f",
+      "exported_sha256": "c43dda0360a6803fdb34e1042e43b9474492f9e9fb1c077b01418e5854a93c7f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/rna_confidence.py",
+      "destination": "protocols/zeroshot/rna_confidence.py",
+      "source_sha256": "4e2f2dec45bd98017a1d73bacac9d4be9c73b5216d189a5e67ff8a7afb0a1d4d",
+      "exported_sha256": "4e2f2dec45bd98017a1d73bacac9d4be9c73b5216d189a5e67ff8a7afb0a1d4d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/rna_msa_guard.py",
+      "destination": "protocols/zeroshot/rna_msa_guard.py",
+      "source_sha256": "d74622cff22ab92e2f113c37b61711b86490a40eb6c48159567544ad79e05a9d",
+      "exported_sha256": "d74622cff22ab92e2f113c37b61711b86490a40eb6c48159567544ad79e05a9d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/rna_msa_missingness.py",
+      "destination": "protocols/zeroshot/rna_msa_missingness.py",
+      "source_sha256": "ed26e9ea547046f387b7bf91181bb5c0104984130bcbb027504c30e955052176",
+      "exported_sha256": "ed26e9ea547046f387b7bf91181bb5c0104984130bcbb027504c30e955052176",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/rna_structure_guard.py",
+      "destination": "protocols/zeroshot/rna_structure_guard.py",
+      "source_sha256": "13b78fb88694cfe2fde7f296ac9ad68f4b762c0ef4c13d3b7a8663533e195f14",
+      "exported_sha256": "13b78fb88694cfe2fde7f296ac9ad68f4b762c0ef4c13d3b7a8663533e195f14",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/run_frozen.py",
+      "destination": "protocols/zeroshot/run_frozen.py",
+      "source_sha256": "d562b203ab64b619140c9d1030e74483bcee2c22595efa60485e354a8c18d250",
+      "exported_sha256": "d562b203ab64b619140c9d1030e74483bcee2c22595efa60485e354a8c18d250",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/sampling.py",
+      "destination": "protocols/zeroshot/sampling.py",
+      "source_sha256": "fbef64ab2f4d059d6e735c1647ae4008eac6761bf3755124a2661a32b013235a",
+      "exported_sha256": "fbef64ab2f4d059d6e735c1647ae4008eac6761bf3755124a2661a32b013235a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/scoring_validation.py",
+      "destination": "protocols/zeroshot/scoring_validation.py",
+      "source_sha256": "bf83c9b19bfcb7b030c735ad87666ddd2c58494d3db834e6a773d1acdb448635",
+      "exported_sha256": "bf83c9b19bfcb7b030c735ad87666ddd2c58494d3db834e6a773d1acdb448635",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/shared_protocol.py",
+      "destination": "protocols/zeroshot/shared_protocol.py",
+      "source_sha256": "66de87a0ab5e52d90032c69497eb673578cc9188737de4566bb9b2eb679e352d",
+      "exported_sha256": "66de87a0ab5e52d90032c69497eb673578cc9188737de4566bb9b2eb679e352d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/single_molecule_protocol.py",
+      "destination": "protocols/zeroshot/single_molecule_protocol.py",
+      "source_sha256": "e4cf88e7cde950b8b621249662b400a03113b989e44ece6e6875b0d1a8d3b975",
+      "exported_sha256": "e4cf88e7cde950b8b621249662b400a03113b989e44ece6e6875b0d1a8d3b975",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/singlechain_catalog.py",
+      "destination": "protocols/zeroshot/singlechain_catalog.py",
+      "source_sha256": "69017e10f65c7aa4a411880bb6cca53612e4cd0c724d76c26cdd6956efe0b154",
+      "exported_sha256": "69017e10f65c7aa4a411880bb6cca53612e4cd0c724d76c26cdd6956efe0b154",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/singlechain_cohort.py",
+      "destination": "protocols/zeroshot/singlechain_cohort.py",
+      "source_sha256": "cc1a0b7d820e0c618a140d02466d60cf65686ba7cd8a39d0d5dedea986189e55",
+      "exported_sha256": "cc1a0b7d820e0c618a140d02466d60cf65686ba7cd8a39d0d5dedea986189e55",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_admet_protocol_v2.py",
+      "destination": "protocols/zeroshot/test_admet_protocol_v2.py",
+      "source_sha256": "658d31a136efb23769c2863b21acf93f53b989609ea2553d84e7195714505074",
+      "exported_sha256": "658d31a136efb23769c2863b21acf93f53b989609ea2553d84e7195714505074",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_monomers.py",
+      "destination": "protocols/zeroshot/test_monomers.py",
+      "source_sha256": "a334026e313e5fd42d0dce65b65ad7cf49ab310a4dd6d055a4657efb237c3c79",
+      "exported_sha256": "a334026e313e5fd42d0dce65b65ad7cf49ab310a4dd6d055a4657efb237c3c79",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_msa_missingness.py",
+      "destination": "protocols/zeroshot/test_msa_missingness.py",
+      "source_sha256": "5f74cc4690dda13b1c6f3bbd1c0c388b866ee41675649abe50cafef953a85a0d",
+      "exported_sha256": "5f74cc4690dda13b1c6f3bbd1c0c388b866ee41675649abe50cafef953a85a0d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_protein_msa_guard.py",
+      "destination": "protocols/zeroshot/test_protein_msa_guard.py",
+      "source_sha256": "73588eebeac98e7b8f8b158886dbc29369f6599e872b7b61fc4fd550fce97bd8",
+      "exported_sha256": "73588eebeac98e7b8f8b158886dbc29369f6599e872b7b61fc4fd550fce97bd8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_rna_confidence.py",
+      "destination": "protocols/zeroshot/test_rna_confidence.py",
+      "source_sha256": "50196ebfa3b4e0ef31d8e95b362e1b867a3ac0b04e9e497710ce3bf8c5877a29",
+      "exported_sha256": "50196ebfa3b4e0ef31d8e95b362e1b867a3ac0b04e9e497710ce3bf8c5877a29",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_rna_msa_guard.py",
+      "destination": "protocols/zeroshot/test_rna_msa_guard.py",
+      "source_sha256": "ced715f85b9bad48c367fcfe63d83301628d78d7ea51b168574d43b5f5403f67",
+      "exported_sha256": "ced715f85b9bad48c367fcfe63d83301628d78d7ea51b168574d43b5f5403f67",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_rna_structure_guard.py",
+      "destination": "protocols/zeroshot/test_rna_structure_guard.py",
+      "source_sha256": "c359d0696448c396e7a3400077bdedb968f625c5e28325dbf0f44cd1d4cff14c",
+      "exported_sha256": "c359d0696448c396e7a3400077bdedb968f625c5e28325dbf0f44cd1d4cff14c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_scoring_validation.py",
+      "destination": "protocols/zeroshot/test_scoring_validation.py",
+      "source_sha256": "02384d3b78842dee79fc9bb01fe4b10217d73e7e7ed5228cde7c2f18896ea976",
+      "exported_sha256": "02384d3b78842dee79fc9bb01fe4b10217d73e7e7ed5228cde7c2f18896ea976",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_shared_protocol.py",
+      "destination": "protocols/zeroshot/test_shared_protocol.py",
+      "source_sha256": "017e6952aa4a3696b8a634c5a127d0d298394bbbc70ab2bfb64ee295a51455a4",
+      "exported_sha256": "017e6952aa4a3696b8a634c5a127d0d298394bbbc70ab2bfb64ee295a51455a4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_zeroshot_msa.py",
+      "destination": "protocols/zeroshot/test_zeroshot_msa.py",
+      "source_sha256": "16db4a975f1a02b8b3431457069eb0369c8392c09381d5c5a1da202ee86be2ad",
+      "exported_sha256": "16db4a975f1a02b8b3431457069eb0369c8392c09381d5c5a1da202ee86be2ad",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/zeroshot_msa.py",
+      "destination": "protocols/zeroshot/zeroshot_msa.py",
+      "source_sha256": "fabd026066bafac1da4dff1249b9ddf6b497c53aae341de4d3f77d2ced8951d4",
+      "exported_sha256": "fabd026066bafac1da4dff1249b9ddf6b497c53aae341de4d3f77d2ced8951d4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/prompts/shared_fields_v1_draft/system_prompt.txt",
+      "destination": "protocols/zeroshot/prompts/shared_fields_v1_draft/system_prompt.txt",
+      "source_sha256": "f1c301f267202114692d7f67827ee4a47da349e3d33542473fe31d0f1e48e3b3",
+      "exported_sha256": "f1c301f267202114692d7f67827ee4a47da349e3d33542473fe31d0f1e48e3b3",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/prompts/admet_v2/system.txt",
+      "destination": "protocols/zeroshot/prompts/admet_v2/system.txt",
+      "source_sha256": "6e2b1699ee5fe7fb9c9e24a034df7a43a27ff1f987edce543125968655501e49",
+      "exported_sha256": "6e2b1699ee5fe7fb9c9e24a034df7a43a27ff1f987edce543125968655501e49",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/audits/feature_contract_20261014_v1/PROFILES.json",
+      "destination": "protocols/zeroshot/audits/feature_contract_20261014_v1/PROFILES.json",
+      "source_sha256": "5d5454f39c88da41a39cfb3106f99603fc60a8da969508a9e47ee45ff6e75a9c",
+      "exported_sha256": "5d5454f39c88da41a39cfb3106f99603fc60a8da969508a9e47ee45ff6e75a9c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "experiments/pg_rna_seed42_n250_v1/prepare.py",
+      "destination": "experiments/pg_rna_seed42_n250_v1/prepare.py",
+      "source_sha256": "6625004e0779b23944831b8162e907ed62629023667411454d51ebe60ba3a8b9",
+      "exported_sha256": "6625004e0779b23944831b8162e907ed62629023667411454d51ebe60ba3a8b9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/sampling_contract.json",
+      "destination": "protocols/zeroshot/sampling_contract.json",
+      "source_sha256": "c9a3ca70d8e3ec8a95f315879971dea23342b7f57ae7f254df2c62ba8eabf06d",
+      "exported_sha256": "c9a3ca70d8e3ec8a95f315879971dea23342b7f57ae7f254df2c62ba8eabf06d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/admet_endpoints_v2.json",
+      "destination": "protocols/zeroshot/admet_endpoints_v2.json",
+      "source_sha256": "fe6decdeb6e660e26794ffd4809e45d2453f8453a8e8238fa9f6c7d2e5534d3e",
+      "exported_sha256": "fe6decdeb6e660e26794ffd4809e45d2453f8453a8e8238fa9f6c7d2e5534d3e",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/check_sampling.py",
+      "destination": "protocols/zeroshot/check_sampling.py",
+      "source_sha256": "12178e84cfb7457d2927809ded374d42ac7ab31f10e4e1daddb3625444fd3df6",
+      "exported_sha256": "12178e84cfb7457d2927809ded374d42ac7ab31f10e4e1daddb3625444fd3df6",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_shared_protocol.py",
+      "destination": "protocols/zeroshot/test_shared_protocol.py",
+      "source_sha256": "017e6952aa4a3696b8a634c5a127d0d298394bbbc70ab2bfb64ee295a51455a4",
+      "exported_sha256": "017e6952aa4a3696b8a634c5a127d0d298394bbbc70ab2bfb64ee295a51455a4",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_scoring_validation.py",
+      "destination": "protocols/zeroshot/test_scoring_validation.py",
+      "source_sha256": "02384d3b78842dee79fc9bb01fe4b10217d73e7e7ed5228cde7c2f18896ea976",
+      "exported_sha256": "02384d3b78842dee79fc9bb01fe4b10217d73e7e7ed5228cde7c2f18896ea976",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_msa_missingness.py",
+      "destination": "protocols/zeroshot/test_msa_missingness.py",
+      "source_sha256": "5f74cc4690dda13b1c6f3bbd1c0c388b866ee41675649abe50cafef953a85a0d",
+      "exported_sha256": "5f74cc4690dda13b1c6f3bbd1c0c388b866ee41675649abe50cafef953a85a0d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_rna_confidence.py",
+      "destination": "protocols/zeroshot/test_rna_confidence.py",
+      "source_sha256": "50196ebfa3b4e0ef31d8e95b362e1b867a3ac0b04e9e497710ce3bf8c5877a29",
+      "exported_sha256": "50196ebfa3b4e0ef31d8e95b362e1b867a3ac0b04e9e497710ce3bf8c5877a29",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_zeroshot_msa.py",
+      "destination": "protocols/zeroshot/test_zeroshot_msa.py",
+      "source_sha256": "16db4a975f1a02b8b3431457069eb0369c8392c09381d5c5a1da202ee86be2ad",
+      "exported_sha256": "16db4a975f1a02b8b3431457069eb0369c8392c09381d5c5a1da202ee86be2ad",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_admet_protocol_v2.py",
+      "destination": "protocols/zeroshot/test_admet_protocol_v2.py",
+      "source_sha256": "658d31a136efb23769c2863b21acf93f53b989609ea2553d84e7195714505074",
+      "exported_sha256": "658d31a136efb23769c2863b21acf93f53b989609ea2553d84e7195714505074",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_protein_msa_guard.py",
+      "destination": "protocols/zeroshot/test_protein_msa_guard.py",
+      "source_sha256": "73588eebeac98e7b8f8b158886dbc29369f6599e872b7b61fc4fd550fce97bd8",
+      "exported_sha256": "73588eebeac98e7b8f8b158886dbc29369f6599e872b7b61fc4fd550fce97bd8",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_rna_msa_guard.py",
+      "destination": "protocols/zeroshot/test_rna_msa_guard.py",
+      "source_sha256": "ced715f85b9bad48c367fcfe63d83301628d78d7ea51b168574d43b5f5403f67",
+      "exported_sha256": "ced715f85b9bad48c367fcfe63d83301628d78d7ea51b168574d43b5f5403f67",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/test_rna_structure_guard.py",
+      "destination": "protocols/zeroshot/test_rna_structure_guard.py",
+      "source_sha256": "c359d0696448c396e7a3400077bdedb968f625c5e28325dbf0f44cd1d4cff14c",
+      "exported_sha256": "c359d0696448c396e7a3400077bdedb968f625c5e28325dbf0f44cd1d4cff14c",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/__init__.py",
+      "destination": "baselines/singlechain/singlechain/__init__.py",
+      "source_sha256": "91093b6b8c6e507e0285d817cd373c1fc0a9fa407228dd914132f19afd2d220f",
+      "exported_sha256": "91093b6b8c6e507e0285d817cd373c1fc0a9fa407228dd914132f19afd2d220f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/aido.py",
+      "destination": "baselines/singlechain/singlechain/aido.py",
+      "source_sha256": "2097d8d00ae6d1f486df544505b03b346efca829bd0f9c180a7e7d17831e3c8a",
+      "exported_sha256": "2097d8d00ae6d1f486df544505b03b346efca829bd0f9c180a7e7d17831e3c8a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/archive.py",
+      "destination": "baselines/singlechain/singlechain/archive.py",
+      "source_sha256": "23118523bbde35cd444ba2e4e407080bd5bf19d8869d8a59e938ead30bcefefc",
+      "exported_sha256": "23118523bbde35cd444ba2e4e407080bd5bf19d8869d8a59e938ead30bcefefc",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/chemprop_external.py",
+      "destination": "baselines/singlechain/singlechain/chemprop_external.py",
+      "source_sha256": "af624f840a14d97a471f23c4e535e8d5a2cd265ccabc278c3a12b2265e31d27d",
+      "exported_sha256": "af624f840a14d97a471f23c4e535e8d5a2cd265ccabc278c3a12b2265e31d27d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/common.py",
+      "destination": "baselines/singlechain/singlechain/common.py",
+      "source_sha256": "40cae55e790e673fa74ce724a2a5b9c74e96ae99af4fec0d6cc5d85a43538e54",
+      "exported_sha256": "40cae55e790e673fa74ce724a2a5b9c74e96ae99af4fec0d6cc5d85a43538e54",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/evaluate.py",
+      "destination": "baselines/singlechain/singlechain/evaluate.py",
+      "source_sha256": "d6624b5fb79573ec83cb217d3b87f1edeef94b1a185bd792f4d6511d33cde580",
+      "exported_sha256": "d6624b5fb79573ec83cb217d3b87f1edeef94b1a185bd792f4d6511d33cde580",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/external_ml.py",
+      "destination": "baselines/singlechain/singlechain/external_ml.py",
+      "source_sha256": "3d2d630fe54edbc9aed6907dce3037288e042c7dca837f589cdefae2b7d45a75",
+      "exported_sha256": "3d2d630fe54edbc9aed6907dce3037288e042c7dca837f589cdefae2b7d45a75",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/gemme.py",
+      "destination": "baselines/singlechain/singlechain/gemme.py",
+      "source_sha256": "c39d334807660437ff6b2a9216c7bc01f62f57126ff5d4d7174abf7830615b4b",
+      "exported_sha256": "c39d334807660437ff6b2a9216c7bc01f62f57126ff5d4d7174abf7830615b4b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/llm.py",
+      "destination": "baselines/singlechain/singlechain/llm.py",
+      "source_sha256": "911eb008bcc38be7d52a32137f8252b314dcc7e53059d5b5a23dea2ad1950db7",
+      "exported_sha256": "911eb008bcc38be7d52a32137f8252b314dcc7e53059d5b5a23dea2ad1950db7",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/models.py",
+      "destination": "baselines/singlechain/singlechain/models.py",
+      "source_sha256": "baedc4b74dbdbb198a68672e8b73f32418bc236768de60f5e1996c1640ca04fb",
+      "exported_sha256": "baedc4b74dbdbb198a68672e8b73f32418bc236768de60f5e1996c1640ca04fb",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/poet2.py",
+      "destination": "baselines/singlechain/singlechain/poet2.py",
+      "source_sha256": "440c07dd17bf7e07cc4e2118e04ab18078ac1270985041d21734dbb66a512ed2",
+      "exported_sha256": "440c07dd17bf7e07cc4e2118e04ab18078ac1270985041d21734dbb66a512ed2",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/potts.py",
+      "destination": "baselines/singlechain/singlechain/potts.py",
+      "source_sha256": "ddf058896009ca87d5f7accee0a74dd96aa05d938a5b5cdb5ef55bb339872441",
+      "exported_sha256": "ddf058896009ca87d5f7accee0a74dd96aa05d938a5b5cdb5ef55bb339872441",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/prepare.py",
+      "destination": "baselines/singlechain/singlechain/prepare.py",
+      "source_sha256": "aa273857792d4cb1889b24e1e2484d48547d29694edb5be7c4e45529416a63c1",
+      "exported_sha256": "aa273857792d4cb1889b24e1e2484d48547d29694edb5be7c4e45529416a63c1",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/singlechain/venusrem.py",
+      "destination": "baselines/singlechain/singlechain/venusrem.py",
+      "source_sha256": "9ace6a8dbb637d3f7d0ce339d57eec70855d824db8da78be14a06cd549e9f4cd",
+      "exported_sha256": "9ace6a8dbb637d3f7d0ce339d57eec70855d824db8da78be14a06cd549e9f4cd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "baselines/singlechain/baseline/run.py",
+      "destination": "baselines/singlechain/run.py",
+      "source_sha256": "32379fe615d38a8334a8bc233cece387818d60e6e5a8d13dbe1b1436f3995f06",
+      "exported_sha256": "32379fe615d38a8334a8bc233cece387818d60e6e5a8d13dbe1b1436f3995f06",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "zeroshot/index/singlechain_catalog_20261015_v1.json",
+      "destination": "benchmark/singlechain_catalog.json",
+      "source_sha256": "a9fea54373869f9726254cd83dcf1120c4e7ec8b01e73d4f39a9aabc4d3ba033",
+      "exported_sha256": "7b29ba963a96bcc05d93324ca13e1dcc3912ab96abfd6fbc91584563647cc590",
+      "transformation": "Select identity/order/hash/availability fields; remove host paths and source payloads."
+    },
+    {
+      "source": "results/single_chain_complete_20261021.json",
+      "destination": "results/single_chain_metrics.json",
+      "source_sha256": "dae79119cca630726dd75961fe5b52a35b875eeed59ce21dd851801bf1d68ef4",
+      "exported_sha256": "ce704813bf7f5c95f835ed3797202940fbbbeffa552d9d21c9ced30811d93451",
+      "transformation": "Preserve all saved metric cells; omit host paths and credential/route metadata."
+    },
+    {
+      "source": "zeroshot/results/current_factual/METRICS.json",
+      "destination": "results/complex_metrics.json",
+      "source_sha256": "ac65f78b192997da8bc1491bc0f3f0bd40f160da19c02b00de8809d3ea626ca2",
+      "exported_sha256": "f8f18b6ac88c5c79c40863a4cd95512eb82672f3981414b1b8e9bfbf31d4fa4e",
+      "transformation": "Preserve saved scientific identity, status and scores; remove host paths and account/routing metadata."
+    },
+    {
+      "source": "zeroshot/EVALUATION_EXCLUSIONS.json",
+      "destination": "benchmark/evaluation_exclusions.json",
+      "source_sha256": "3f6b57835fe87b2114c7fbf863e1cb7802f03c0342798e2f37747f5abc6c0503",
+      "exported_sha256": "3f6b57835fe87b2114c7fbf863e1cb7802f03c0342798e2f37747f5abc6c0503",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/_source/protein_n50_short_queries_20261021_v1/PLOT_DATA.json",
+      "destination": "results/figure_packets/protein.json",
+      "source_sha256": "172a76250985d550ffd97c10d9df2400b14ad11a6efa4675d2e6af320174023e",
+      "exported_sha256": "b472878d089375b7b92618e5ab19e711aa96acc5487338383e6ec1054aeb75c8",
+      "transformation": "Select current cohort and plotted numeric values; remove local provenance paths."
+    },
+    {
+      "source": "fig/final/single_chain/protein/protein_best_arm_llm_baselines_n50_20261021_v1.svg",
+      "destination": "figures/published/protein.svg",
+      "source_sha256": "a2d0e23c4b5a7b6ca9731e58bbd8caa2d8ffe1960482fffdc3b09c3380e16abd",
+      "exported_sha256": "a2d0e23c4b5a7b6ca9731e58bbd8caa2d8ffe1960482fffdc3b09c3380e16abd",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/single_chain/protein/protein_best_arm_llm_baselines_n50_20261021_v1.png",
+      "destination": "figures/published/protein.png",
+      "source_sha256": "cfe9837db8ce3c0f6d688215daa707154e358c0cadc2c335f95238d46eafa78f",
+      "exported_sha256": "cfe9837db8ce3c0f6d688215daa707154e358c0cadc2c335f95238d46eafa78f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/single_chain/protein/protein_best_arm_llm_baselines_n50_20261021_v1.pdf",
+      "destination": "figures/published/protein.pdf",
+      "source_sha256": "2dad283588492e1e92a55d9fe56144ab698ba56695a9e386f0cb6a8111dcfb4d",
+      "exported_sha256": "2dad283588492e1e92a55d9fe56144ab698ba56695a9e386f0cb6a8111dcfb4d",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/_source/completed_baselines_refresh_20261021_v1/PLOT_DATA.json",
+      "destination": "results/figure_packets/rna.json",
+      "source_sha256": "dd0a554256a7f340c74d0dc9048440b89d834cd347ee796dc49dc8aac5b42999",
+      "exported_sha256": "d979730ab9c997cf7c3178b14138cea1a2fa2e16e270f174196d8643b6ede2ed",
+      "transformation": "Select current cohort and plotted numeric values; remove local provenance paths."
+    },
+    {
+      "source": "fig/final/single_chain/rna/rna_best_arm_llm_baselines_n28_20261018_v1.svg",
+      "destination": "figures/published/rna.svg",
+      "source_sha256": "e7f7ec8de2d582fe9ab4d42ec7ac10220177a6df8498f77d407148caabae39a9",
+      "exported_sha256": "e7f7ec8de2d582fe9ab4d42ec7ac10220177a6df8498f77d407148caabae39a9",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/single_chain/rna/rna_best_arm_llm_baselines_n28_20261018_v1.png",
+      "destination": "figures/published/rna.png",
+      "source_sha256": "6ff0ecd5fa44b58b74efcca084bc0a566b5ac3b0081327492ca3c67014c2625b",
+      "exported_sha256": "6ff0ecd5fa44b58b74efcca084bc0a566b5ac3b0081327492ca3c67014c2625b",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/single_chain/rna/rna_best_arm_llm_baselines_n28_20261018_v1.pdf",
+      "destination": "figures/published/rna.pdf",
+      "source_sha256": "e87e84530574942935d56b3833ec1fad793be36313ee897d8ce274fd10eeec65",
+      "exported_sha256": "e87e84530574942935d56b3833ec1fad793be36313ee897d8ce274fd10eeec65",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/_source/completed_baselines_refresh_20261021_v1/PLOT_DATA.json",
+      "destination": "results/figure_packets/ligand_classification.json",
+      "source_sha256": "dd0a554256a7f340c74d0dc9048440b89d834cd347ee796dc49dc8aac5b42999",
+      "exported_sha256": "c14ef4ed59b59369038fe8faa28fca2791e38763b08eb0801d941c75842a9ac3",
+      "transformation": "Select current cohort and plotted numeric values; remove local provenance paths."
+    },
+    {
+      "source": "fig/final/single_chain/ligand/classification/ligand_classification_best_arm_llm_baselines_n13_20261021_v1.svg",
+      "destination": "figures/published/ligand_classification.svg",
+      "source_sha256": "abe463c77ee155d263d5ed8be375034c42e54d6c25da4cc8ed527e2c53776c1f",
+      "exported_sha256": "abe463c77ee155d263d5ed8be375034c42e54d6c25da4cc8ed527e2c53776c1f",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/single_chain/ligand/classification/ligand_classification_best_arm_llm_baselines_n13_20261021_v1.png",
+      "destination": "figures/published/ligand_classification.png",
+      "source_sha256": "4030c5501b045cd177fecd24e241ffeaacff8f88dcade89705b6d35f3e64b1ed",
+      "exported_sha256": "4030c5501b045cd177fecd24e241ffeaacff8f88dcade89705b6d35f3e64b1ed",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/single_chain/ligand/classification/ligand_classification_best_arm_llm_baselines_n13_20261021_v1.pdf",
+      "destination": "figures/published/ligand_classification.pdf",
+      "source_sha256": "f0a2d3fd38b4485e7f4447aef0524a7482b09be23f406906d7a9c8290766e71a",
+      "exported_sha256": "f0a2d3fd38b4485e7f4447aef0524a7482b09be23f406906d7a9c8290766e71a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/_source/completed_baselines_refresh_20261021_v1/PLOT_DATA.json",
+      "destination": "results/figure_packets/ligand_regression.json",
+      "source_sha256": "dd0a554256a7f340c74d0dc9048440b89d834cd347ee796dc49dc8aac5b42999",
+      "exported_sha256": "cea5d29908e816e12bdc6420b0c297a5fc105a7f70e3f45d91c668a0a350c3af",
+      "transformation": "Select current cohort and plotted numeric values; remove local provenance paths."
+    },
+    {
+      "source": "fig/final/single_chain/ligand/regression/ligand_regression_best_arm_llm_baselines_n8_20261018_v1.svg",
+      "destination": "figures/published/ligand_regression.svg",
+      "source_sha256": "abb9c240e24a5ed2a00150bfbc033380479f55866155fbbf86e25357bcc38f5a",
+      "exported_sha256": "abb9c240e24a5ed2a00150bfbc033380479f55866155fbbf86e25357bcc38f5a",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/single_chain/ligand/regression/ligand_regression_best_arm_llm_baselines_n8_20261018_v1.png",
+      "destination": "figures/published/ligand_regression.png",
+      "source_sha256": "f622ffdc10cb1d502372fd9183d66284e70e88956288ae2c338de23beeff9529",
+      "exported_sha256": "f622ffdc10cb1d502372fd9183d66284e70e88956288ae2c338de23beeff9529",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/single_chain/ligand/regression/ligand_regression_best_arm_llm_baselines_n8_20261018_v1.pdf",
+      "destination": "figures/published/ligand_regression.pdf",
+      "source_sha256": "61a11cbde8441571ec4ce90ceafa3ea64b56a6cdfe5fc526c35e12fc00a6c657",
+      "exported_sha256": "61a11cbde8441571ec4ce90ceafa3ea64b56a6cdfe5fc526c35e12fc00a6c657",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/_source/ppi_ddaffinity_n27_20261022_v1/PLOT_DATA.json",
+      "destination": "results/figure_packets/protein_protein.json",
+      "source_sha256": "60f9d634b4a24c57102ac25cfe26af9b2b2f84cec0668259605b811eb1644842",
+      "exported_sha256": "cdf68b4bb05fa9f89f353e58252331321a683024b4fb6eb03593070b8c05aa29",
+      "transformation": "Select current cohort and plotted numeric values; remove local provenance paths."
+    },
+    {
+      "source": "fig/final/complex/protein-protein/protein_protein_best_arm_llm_baselines.svg",
+      "destination": "figures/published/protein_protein.svg",
+      "source_sha256": "f05913c25fb406da045d4a8d07b73f7688b8a40845e451df86985a89c20dedcf",
+      "exported_sha256": "f05913c25fb406da045d4a8d07b73f7688b8a40845e451df86985a89c20dedcf",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/complex/protein-protein/protein_protein_best_arm_llm_baselines.png",
+      "destination": "figures/published/protein_protein.png",
+      "source_sha256": "43322b1088c00d1d4fac18d34fb916b37391718b5ac1a75754b4eaa0259c5a28",
+      "exported_sha256": "43322b1088c00d1d4fac18d34fb916b37391718b5ac1a75754b4eaa0259c5a28",
+      "transformation": "byte-identical"
+    },
+    {
+      "source": "fig/final/complex/protein-protein/protein_protein_best_arm_llm_baselines.pdf",
+      "destination": "figures/published/protein_protein.pdf",
+      "source_sha256": "7717f703a2ca42bb900d1c579d4d32871228e1399bf365bad3d382fb765b5ad7",
+      "exported_sha256": "7717f703a2ca42bb900d1c579d4d32871228e1399bf365bad3d382fb765b5ad7",
+      "transformation": "byte-identical"
+    }
+  ]
+}

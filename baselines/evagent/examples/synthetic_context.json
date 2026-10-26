@@ -1,0 +1,8 @@
+{
+  "assay": "synthetic_contract",
+  "wt_sequence": "ACGUACGU",
+  "metadata": {
+    "DMS_ID": "synthetic_contract",
+    "ASSAY_DESCRIPTION": "Synthetic software fixture only; not a biological benchmark"
+  }
+}

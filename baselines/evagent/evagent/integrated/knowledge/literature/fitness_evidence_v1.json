@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "pack_id": "rna-fitness-general-literature-v1",
+  "created_at_utc": "2026-09-08T00:00:00Z",
+  "protocol": {
+    "scope": "General mechanistic and methodological knowledge only",
+    "zero_shot_rule": "Exclude the exact source paper and all variant-level measurements for an evaluated assay",
+    "content_policy": "Paraphrased guidance; no abstracts or result tables are copied",
+    "selection": "Deterministic tag matching; no live retrieval during benchmark calls"
+  },
+  "items": [
+    {
+      "id": "rnagym-2025",
+      "title": "RNAGym: A comprehensive benchmark for RNA foundation models",
+      "doi": "10.1101/2025.06.16.660049",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.16.660049v1",
+      "tags": ["benchmark", "all"],
+      "agent_guidance": "Interpret the target as the assay-specific measured phenotype and preserve strict separation between model input and held-out fitness labels.",
+      "limitations": "The benchmark description defines evaluation context but does not justify candidate-specific predictions."
+    },
+    {
+      "id": "dms-overview-2014",
+      "title": "Deep mutational scanning: a new style of protein science",
+      "doi": "10.1038/nmeth.3027",
+      "pmid": "25075907",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25075907/",
+      "tags": ["dms", "coding", "all"],
+      "agent_guidance": "Treat a DMS score as a phenotype produced by the complete selection and measurement pipeline, not as a direct physical-energy measurement.",
+      "limitations": "This overview is protein-focused and supplies only general DMS interpretation principles."
+    },
+    {
+      "id": "viennarna-2",
+      "title": "ViennaRNA Package 2.0",
+      "doi": "10.1186/1748-7188-6-26",
+      "url": "https://doi.org/10.1186/1748-7188-6-26",
+      "tags": ["secondary_structure", "functional_rna", "all"],
+      "agent_guidance": "When prediction is available, compare ensembles, base-pair probabilities, accessibility, and uncertainty; do not equate a lower MFE with higher assay fitness.",
+      "limitations": "Thermodynamic secondary-structure models omit or approximate many tertiary, ligand, protein, kinetic, and pseudoknot effects."
+    },
+    {
+      "id": "dms-map-seq-2017",
+      "title": "RNA structure probing at single-nucleotide resolution by DMS-MaPseq",
+      "doi": "10.1038/nmeth.4057",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5508988/",
+      "tags": ["chemical_probing", "functional_rna"],
+      "agent_guidance": "If assay-matched probing data exist, use nucleotide accessibility as experimental structural evidence and keep it distinct from in-silico fold predictions.",
+      "limitations": "Reactivity depends on chemical accessibility and experimental context and is not a direct fitness label."
+    },
+    {
+      "id": "four-base-dms-2023",
+      "title": "Four-base DMS probing of RNA structure",
+      "doi": "10.1093/nar/gkad522",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10484685/",
+      "tags": ["chemical_probing", "functional_rna"],
+      "agent_guidance": "Broader nucleotide-resolved probing can complement sequence-based structure hypotheses when an assay-matched dataset is available.",
+      "limitations": "Chemical probing remains condition-dependent and should not be transferred across constructs without alignment and coverage checks."
+    }
+  ]
+}
+

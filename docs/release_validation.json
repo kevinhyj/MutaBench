@@ -1,0 +1,18 @@
+{
+  "release": "0.1.0",
+  "date": "2026-10-26",
+  "new_inference_calls": 0,
+  "core_evaluator_tests": {"passed": 17},
+  "reference_protocol_tests": {"passed": 95, "subtests_passed": 17},
+  "sampling_contract_tests": {"passed": 5},
+  "evagent_offline_tests": {"passed": 633, "skipped": 12, "deselected": 1, "subtests_passed": 28},
+  "skip_scope": "Five tests need structure/literature assets deliberately distributed separately; other skips retain optional backend/dependency status. One live test is deselected.",
+  "saved_single_chain_metric_cells_verified": 2828,
+  "saved_complex_metric_cells_verified": 1792,
+  "registered_source_assays_verified": 249,
+  "figure_numeric_packets_verified_and_redrawn": 5,
+  "synthetic_harness_dry_run": {"api_calls": 0, "writes": 0},
+  "python_wheel_build": "PASS",
+  "environment": {"python": "3.13.12", "numpy": "2.4.6", "scipy": "1.18.1", "pytest": "9.1.1"},
+  "scope": "Code export, offline contracts and saved numeric packet validation. Full scientific data are a separate Hugging Face release. No new inference or all-model live readiness claim."
+}

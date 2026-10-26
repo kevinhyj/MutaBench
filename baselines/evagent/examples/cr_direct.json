@@ -1,0 +1,14 @@
+{
+  "method": "cr",
+  "backend": "direct",
+  "model": "gemini-3.8-flash",
+  "thinking_level": "medium",
+  "sample_file": "synthetic_sample.json",
+  "context_file": "synthetic_context.json",
+  "output_dir": "../../experiments/integrated/cr-direct-example",
+  "token_budget": null,
+  "memory_mode": "none",
+  "evidence_mode": "none",
+  "group_size": 4,
+  "anchor_count": 1
+}

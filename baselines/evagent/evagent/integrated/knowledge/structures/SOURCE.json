@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-08T00:00:00Z",
+  "usage_rule": "A structure may enter an assay evidence bundle only through an explicit reference-sheet PDB ID. Unassigned structures are retained but not injected.",
+  "sources": [
+    {
+      "kind": "rnagym_official_archive",
+      "url": "https://marks.hms.harvard.edu/rnagym/fitness_prediction/fitness_assays_3D_structures.zip",
+      "archive_sha256": "ebfef9960bca80d37ff319b1c4a506b0244a95bc6b84d151cfe0b3c2e1b0ba6e",
+      "files": [
+        {"path": "fitness_assays_3D_structures/1ehz.pdb", "sha256": "3a43aefed0b6d5d8b4be47c44470e61258d0e90b5ff608f132a2c9731c9df41f"},
+        {"path": "fitness_assays_3D_structures/1o15.pdb", "sha256": "486b778b91596c398ab63f2e7704429e52f46df7aa61173d2b697e8ddc4dc6d1"},
+        {"path": "fitness_assays_3D_structures/2z75.pdb", "sha256": "1f838072b82ac373755681988266203db023726109217faa9945b3b9a7ada0bf"}
+      ],
+      "notes": "1O15 has no explicit assay mapping in the local reference sheet and is therefore not injected by evidence-v1."
+    },
+    {
+      "kind": "rcsb_pdb",
+      "base_url": "https://files.rcsb.org/download/",
+      "files": [
+        {"pdb_id": "4OJI", "path": "rcsb/4oji.pdb", "sha256": "a65f81b809719add1112b66e2a5703813d085eba631243350369c9ab9bb3e408"},
+        {"pdb_id": "8T2P", "path": "rcsb/8t2p.pdb", "sha256": "ddc6f16ef021f5a2b3e79a015c0c08ef71ec62642327450ceccf5ed354a39d06"}
+      ],
+      "notes": "These IDs are explicitly listed by the RNAGym fitness reference sheet but absent from the official fitness archive."
+    }
+  ]
+}
+

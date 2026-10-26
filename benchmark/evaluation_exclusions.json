@@ -1,0 +1,34 @@
+{
+  "version": "rna_mixed_target_exclusion_20261016_v1",
+  "confirmed_date": "2026-10-16",
+  "basis": "用户要求删除已确认身份/标签错误的assay，清理当前来源和冻结prompt并替换图。",
+  "applies_to": "Current evaluation and plotting, all models, all arms and all baselines; future cohorts must honor this exclusion.",
+  "selection_by_metric": false,
+  "historical_raw_artifacts_preserved": true,
+  "audit": "audits/rna_mixed_target_exclusion_20261016_v1/README.md",
+  "assays": [
+    {
+      "domain": "protein_ligand",
+      "assay": "platinum_1ba63813aabda8b0",
+      "assay_id": "8f80a864ebd9e5aed4bf48d8",
+      "ligand": "beta-cyclodextrin",
+      "reason": "Full ligand identity/topology omitted; represented as single GLC, with USER identical to maltoheptaose except assay_id."
+    },
+    {
+      "domain": "protein_ligand",
+      "assay": "platinum_f2b7041bd5fedfed",
+      "assay_id": "2fc50e5c665cc1964f9258c0",
+      "ligand": "maltoheptaose",
+      "reason": "Full ligand identity/topology omitted; same GLC prompt and beta-cyclodextrin geometry used without surrogate disclosure."
+    },
+    {
+      "domain": "protein_rna",
+      "assay": "nabe__404bbbe64864144ff2fafbbd",
+      "assay_id": "404bbbe64864144ff2fafbbd",
+      "reference_complex_id": "2ZZN",
+      "temperature_K": 310,
+      "reason": "Mixed tRNA and AdoMet binding targets; four of ten selected labels average across targets.",
+      "evidence": "audits/negative_prompt_factual_20261016_v1/TRM5_MIXED_TARGET_PROOF.json"
+    }
+  ]
+}

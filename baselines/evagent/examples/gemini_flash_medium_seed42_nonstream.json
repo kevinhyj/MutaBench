@@ -1,0 +1,15 @@
+{
+  "api_key_env": "GEMINI_API_KEY",
+  "endpoint": null,
+  "generation_seed": 42,
+  "include_thoughts": true,
+  "max_output_tokens": 65536,
+  "model": "gemini-3.8-flash",
+  "provider": "google_genai",
+  "proxy": "http://127.0.0.1:7777",
+  "retries": 0,
+  "temperature": 0,
+  "thinking_level": "medium",
+  "timeout_s": 900,
+  "transport_mode": "nonstream"
+}

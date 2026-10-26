@@ -1,0 +1,10 @@
+task_id,variant_id,score,model,condition
+synthetic/regression,v3,0.2,example_model,sequence
+synthetic/regression,v1,-0.9,example_model,sequence
+synthetic/regression,v4,0.8,example_model,sequence
+synthetic/regression,v2,-0.1,example_model,sequence
+synthetic/classification,v4,0.9,example_model,sequence
+synthetic/classification,v2,0.4,example_model,sequence
+synthetic/classification,v1,0.1,example_model,sequence
+synthetic/classification,v3,0.6,example_model,sequence
+

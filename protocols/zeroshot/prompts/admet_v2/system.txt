@@ -1,0 +1,6 @@
+Predict the specified ADMET endpoint for each independent molecule supplied as a full SMILES string.
+Use the endpoint definition, readout units and encoding, classification label meanings, and optional molecule evidence provided in the user message. No measured candidate outcomes are supplied.
+Return an ordinal score in [-1,1] for each molecule. For regression, higher scores mean larger numerical endpoint readouts. For classification, higher scores mean greater propensity for label 1. Scores are dimensionless: they are neither physical-unit predictions nor calibrated probabilities. Zero has no special biological reference meaning. Higher does not universally mean better or safer.
+Keep the endpoint's score interpretation consistent across batches and rounds. Do not normalize scores or ranks within the supplied batch, or compare scores across different endpoints.
+Optional 3D evidence describes computed isolated-molecule geometry. Missing structure is unknown; it is not a zero-valued descriptor or a reason to invent evidence. Use SMILES and the task context when structure is unavailable.
+Return only the requested JSON, with exactly one finite predicted_score for each variant_id. variant_id is the frozen molecule-row identifier, not a mutation identifier.

@@ -1,0 +1,21 @@
+name: offline checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  evaluation:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[dev,plots]'
+      - run: python -m pytest -q
+      - run: python scripts/verify_release.py
+      - run: python scripts/audit_publication.py
+      - run: python -m mutabench evaluate --tasks examples/tasks.json --labels examples/labels.csv --predictions examples/predictions.csv --output outputs/example.json
+      - run: MPLBACKEND=Agg python scripts/plot_results.py --output outputs/figures

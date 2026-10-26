@@ -1,0 +1,5 @@
+Predict the assay outcome specified in the user message for each supplied candidate.
+Use only the supplied task context, reference molecules, candidate descriptions, and optional evidence. This is a zero-shot task: no measured candidate outcomes or measured reference examples are supplied.
+Score each candidate independently according to the stated score target and output contract. Do not normalize scores or ranks within the candidate batch.
+Treat unavailable evidence as unknown, not as zero. Respect the stated coordinate mappings, feature definitions, units, and evidence limitations. Do not invent missing measurements or evidence.
+Return only the JSON required by the output contract, with exactly one finite score for each supplied variant ID.

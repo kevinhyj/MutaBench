@@ -1,0 +1,626 @@
+{
+  "schema": "mutabench-baseline-catalog-v1",
+  "note": "Historical registration/readiness metadata, not a claim that all models are packaged or runnable.",
+  "models": [
+    {
+      "id": "singlechain-random",
+      "display_name": "random",
+      "scope": "singlechain",
+      "modalities": [
+        "any"
+      ],
+      "comparison_group": "simple_control",
+      "independent_zero_shot_admitted": true,
+      "source_status": "historical_scoring_function_present",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-esm2-masked-marginals",
+      "display_name": "esm2:masked-marginals",
+      "scope": "singlechain",
+      "modalities": [
+        "protein"
+      ],
+      "comparison_group": "pretrained_sequence",
+      "independent_zero_shot_admitted": true,
+      "source_status": "cpu_synthetic_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-esm2-wt-marginals",
+      "display_name": "esm2:wt-marginals",
+      "scope": "singlechain",
+      "modalities": [
+        "protein"
+      ],
+      "comparison_group": "pretrained_sequence",
+      "independent_zero_shot_admitted": true,
+      "source_status": "cpu_synthetic_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-rnafm-joint-masked",
+      "display_name": "rnafm:joint-masked",
+      "scope": "singlechain",
+      "modalities": [
+        "rna"
+      ],
+      "comparison_group": "pretrained_sequence",
+      "independent_zero_shot_admitted": true,
+      "source_status": "cpu_synthetic_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-rnafm-wt-marginals",
+      "display_name": "rnafm:wt-marginals",
+      "scope": "singlechain",
+      "modalities": [
+        "rna"
+      ],
+      "comparison_group": "pretrained_sequence",
+      "independent_zero_shot_admitted": true,
+      "source_status": "cpu_synthetic_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-rnafm-masked-marginals",
+      "display_name": "rnafm:masked-marginals",
+      "scope": "singlechain",
+      "modalities": [
+        "rna"
+      ],
+      "comparison_group": "pretrained_sequence",
+      "independent_zero_shot_admitted": true,
+      "source_status": "cpu_synthetic_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-venusrem-native",
+      "display_name": "venusrem:native",
+      "scope": "singlechain",
+      "modalities": [
+        "protein"
+      ],
+      "comparison_group": "pretrained_structure_msa",
+      "independent_zero_shot_admitted": true,
+      "source_status": "cpu_public_two_candidate_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-prosst-wt-marginals",
+      "display_name": "prosst:wt-marginals",
+      "scope": "singlechain",
+      "modalities": [
+        "protein"
+      ],
+      "comparison_group": "pretrained_structure",
+      "independent_zero_shot_admitted": true,
+      "source_status": "cpu_public_two_candidate_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-aido-rag-zeroshot",
+      "display_name": "aido:rag-zeroshot",
+      "scope": "singlechain",
+      "modalities": [
+        "protein"
+      ],
+      "comparison_group": "pretrained_structure_msa",
+      "independent_zero_shot_admitted": true,
+      "source_status": "cpu_synthetic_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-poet2-msa-wtstructure",
+      "display_name": "poet2:msa-wtstructure",
+      "scope": "singlechain",
+      "modalities": [
+        "protein"
+      ],
+      "comparison_group": "pretrained_structure_msa",
+      "independent_zero_shot_admitted": true,
+      "source_status": "cpu_synthetic_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-msa-site-independent",
+      "display_name": "msa:site-independent",
+      "scope": "singlechain",
+      "modalities": [
+        "sequence"
+      ],
+      "comparison_group": "msa_statistical",
+      "independent_zero_shot_admitted": true,
+      "source_status": "historical_scoring_function_present",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-vienna-ensemble-defect",
+      "display_name": "vienna:ensemble-defect",
+      "scope": "singlechain",
+      "modalities": [
+        "rna"
+      ],
+      "comparison_group": "physical_proxy",
+      "independent_zero_shot_admitted": true,
+      "source_status": "historical_scoring_function_present",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-crippen-logp",
+      "display_name": "crippen:logp",
+      "scope": "singlechain",
+      "modalities": [
+        "ligand"
+      ],
+      "comparison_group": "property_proxy",
+      "independent_zero_shot_admitted": true,
+      "source_status": "historical_scoring_function_present",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-admet-ai",
+      "display_name": "admet-ai",
+      "scope": "singlechain",
+      "modalities": [
+        "ligand"
+      ],
+      "comparison_group": "external_supervised_overlap_unresolved",
+      "independent_zero_shot_admitted": false,
+      "source_status": "historical_scoring_function_present",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Native singlechain-v1 input; strict N250 or explicitly marked smoke, substitutions only.",
+        "Dataset-specific MSA/structure context and endpoint suitability still required.",
+        "Historical CPU check is not all-assay validation; no GPU claim."
+      ]
+    },
+    {
+      "id": "singlechain-gemme-native",
+      "display_name": "gemme:native",
+      "scope": "singlechain",
+      "modalities": [
+        "protein"
+      ],
+      "comparison_group": "msa_statistical",
+      "source_status": "historical_scoring_adapter_present",
+      "source_status_date": "2026-09-27",
+      "limitations": [
+        "Requires native input and model-specific assets; ESOL heads apply only to matching endpoints.",
+        "GEMME requires its recorded container and alignment; fitting/training is a separate action."
+      ]
+    },
+    {
+      "id": "singlechain-potts",
+      "display_name": "potts",
+      "scope": "singlechain",
+      "modalities": [
+        "sequence"
+      ],
+      "comparison_group": "msa_statistical",
+      "source_status": "historical_scoring_adapter_present",
+      "source_status_date": "2026-09-27",
+      "limitations": [
+        "Requires native input and model-specific assets; ESOL heads apply only to matching endpoints.",
+        "GEMME requires its recorded container and alignment; fitting/training is a separate action."
+      ]
+    },
+    {
+      "id": "singlechain-ecfp4-rf",
+      "display_name": "ecfp4:rf",
+      "scope": "singlechain",
+      "modalities": [
+        "ligand"
+      ],
+      "comparison_group": "external_supervised_transfer",
+      "source_status": "historical_scoring_adapter_present",
+      "source_status_date": "2026-09-27",
+      "limitations": [
+        "Requires native input and model-specific assets; ESOL heads apply only to matching endpoints.",
+        "GEMME requires its recorded container and alignment; fitting/training is a separate action."
+      ]
+    },
+    {
+      "id": "singlechain-ecfp4-xgboost",
+      "display_name": "ecfp4:xgboost",
+      "scope": "singlechain",
+      "modalities": [
+        "ligand"
+      ],
+      "comparison_group": "external_supervised_transfer",
+      "source_status": "historical_scoring_adapter_present",
+      "source_status_date": "2026-09-27",
+      "limitations": [
+        "Requires native input and model-specific assets; ESOL heads apply only to matching endpoints.",
+        "GEMME requires its recorded container and alignment; fitting/training is a separate action."
+      ]
+    },
+    {
+      "id": "singlechain-chemprop-external-esol",
+      "display_name": "chemprop:external-esol",
+      "scope": "singlechain",
+      "modalities": [
+        "ligand"
+      ],
+      "comparison_group": "external_supervised_transfer",
+      "source_status": "historical_scoring_adapter_present",
+      "source_status_date": "2026-09-27",
+      "limitations": [
+        "Requires native input and model-specific assets; ESOL heads apply only to matching endpoints.",
+        "GEMME requires its recorded container and alignment; fitting/training is a separate action."
+      ]
+    },
+    {
+      "id": "component-aido-structure-encoder",
+      "display_name": "aido-structure-encoder",
+      "scope": "component",
+      "source_status": "strict_weight_load_passed_forward_not_tested",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Scoring/data adapter not connected here."
+      ]
+    },
+    {
+      "id": "component-rinalmo-native",
+      "display_name": "rinalmo-native",
+      "scope": "component",
+      "source_status": "cpu_strict_load_failed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "flash attention checkpoint and native nonflash module state key mismatch"
+      ]
+    },
+    {
+      "id": "component-copra",
+      "display_name": "copra",
+      "scope": "component",
+      "source_status": "checkpoint_read_passed_forward_not_tested",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Scoring/data adapter not connected here."
+      ]
+    },
+    {
+      "id": "component-ddaffinity",
+      "display_name": "ddaffinity",
+      "scope": "component",
+      "source_status": "ten_fold_cpu_synthetic_forward_passed",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Scoring/data adapter not connected here."
+      ]
+    },
+    {
+      "id": "complex-ddaffinity",
+      "display_name": "DDAffinity",
+      "scope": "complex",
+      "source_status": "environment_and_checkpoint_ready; input_preprocessing_requires_FoldX",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "FoldX for WT/mutant structure preprocessing",
+        "canonical complex input adapter",
+        "checkpoint training-overlap audit",
+        "upstream SKEMPI2 evaluation; canonical adapter not implemented",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-saambe-3d",
+      "display_name": "SAAMBE-3D",
+      "scope": "complex",
+      "source_status": "CPU_environment_CLI_and_regression_checkpoint_ready",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-boltz-2-affinity",
+      "display_name": "Boltz-2 affinity",
+      "scope": "complex",
+      "source_status": "CPU_environment_import_and_official_asset_hashes_passed; forward_not_run",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-multi-evolve-one-hot-fcnn",
+      "display_name": "MULTI-evolve one-hot FCNN",
+      "scope": "fewshot_excluded",
+      "source_status": "environment_import_or_CLI_checked; no_assay_inference",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-evolvepro-esm-2-rf",
+      "display_name": "EVOLVEpro / ESM-2+RF",
+      "scope": "fewshot_excluded",
+      "source_status": "environment_import_or_CLI_checked; no_assay_inference",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-ridge-mlp-additive-ridge-svr",
+      "display_name": "Ridge/MLP/additive ridge/SVR",
+      "scope": "fewshot_excluded",
+      "source_status": "environment_import_or_CLI_checked; no_assay_inference",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-rosetta-flex-ddg",
+      "display_name": "Rosetta flex ddG",
+      "scope": "complex",
+      "source_status": "binary_database_and_CLI_ready; assay_protocol_not_run",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-rosettaligand",
+      "display_name": "RosettaLigand",
+      "scope": "complex",
+      "source_status": "binary_database_and_CLI_ready; assay_protocol_not_run",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-prempli",
+      "display_name": "PremPLI",
+      "scope": "complex",
+      "source_status": "python_R_and_RData_ready; full_pipeline_blocked",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-arpeggio-prempli-dependency",
+      "display_name": "Arpeggio (PremPLI dependency)",
+      "scope": "complex",
+      "source_status": "environment_import_or_CLI_checked; no_assay_inference",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-foldx",
+      "display_name": "FoldX",
+      "scope": "complex",
+      "source_status": "external_binary_required",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-ddmut-ppi",
+      "display_name": "DDMut-PPI",
+      "scope": "complex",
+      "source_status": "official_web_api_only_found",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-mcsm-ppi2",
+      "display_name": "mCSM-PPI2",
+      "scope": "complex",
+      "source_status": "official_web_service_only_found",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-mcsm-lig",
+      "display_name": "mCSM-lig",
+      "scope": "complex",
+      "source_status": "official_web_service_only_found",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "complex-esm-2-msa-potts",
+      "display_name": "ESM-2 / MSA / Potts",
+      "scope": "complex",
+      "source_status": "reuse_existing_local_resources; no_new_inference",
+      "source_status_date": "historical registry; current path check only",
+      "limitations": [
+        "Upstream CLI/worker is not a generic canonical adapter.",
+        "Historical workers may bind old cohorts, paths and output folders; never auto-resume them."
+      ]
+    },
+    {
+      "id": "remote-evo2-7b",
+      "display_name": "evo2-7b",
+      "scope": "remote",
+      "source_status": "current_import_passed_historical_inference_only",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Remote asset catalogue only; no SSH/forward performed in this audit.",
+        "Embedding deployments are not automatically zero-shot fitness scorers."
+      ]
+    },
+    {
+      "id": "remote-esm2-650m",
+      "display_name": "esm2-650m",
+      "scope": "remote",
+      "source_status": "current_weight_hash_verified_locally_after_copy_historical_remote_forward_only",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Remote asset catalogue only; no SSH/forward performed in this audit.",
+        "Embedding deployments are not automatically zero-shot fitness scorers."
+      ]
+    },
+    {
+      "id": "remote-rnafm",
+      "display_name": "rnafm",
+      "scope": "remote",
+      "source_status": "historical_inference_only",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Remote asset catalogue only; no SSH/forward performed in this audit.",
+        "Embedding deployments are not automatically zero-shot fitness scorers."
+      ]
+    },
+    {
+      "id": "remote-rnaernie-multimolecule",
+      "display_name": "rnaernie-multimolecule",
+      "scope": "remote",
+      "source_status": "current_import_passed_historical_inference_only",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Remote asset catalogue only; no SSH/forward performed in this audit.",
+        "Embedding deployments are not automatically zero-shot fitness scorers."
+      ]
+    },
+    {
+      "id": "remote-rinalmo-multimolecule",
+      "display_name": "rinalmo-multimolecule",
+      "scope": "remote",
+      "source_status": "current_import_passed_historical_inference_only",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Remote asset catalogue only; no SSH/forward performed in this audit.",
+        "Embedding deployments are not automatically zero-shot fitness scorers."
+      ]
+    },
+    {
+      "id": "remote-tool-esm2-3b-america",
+      "display_name": "esm2-3b-america",
+      "scope": "remote_tool",
+      "source_status": "weights_and_imports_checked_gpu_forward_unverified",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Use the existing remote tool CLI and resource protocol.",
+        "ESM2 embedding output is not a zero-shot fitness score."
+      ]
+    },
+    {
+      "id": "remote-tool-esm3-america",
+      "display_name": "esm3-america",
+      "scope": "remote_tool",
+      "source_status": "weights_only_environment_pending",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Use the existing remote tool CLI and resource protocol.",
+        "ESM2 embedding output is not a zero-shot fitness score."
+      ]
+    },
+    {
+      "id": "remote-tool-evo2-america",
+      "display_name": "evo2-america",
+      "scope": "remote_tool",
+      "source_status": "weights_and_imports_checked_catalog_only",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Use the existing remote tool CLI and resource protocol.",
+        "ESM2 embedding output is not a zero-shot fitness score."
+      ]
+    },
+    {
+      "id": "remote-tool-qwen-america",
+      "display_name": "qwen-america",
+      "scope": "remote_tool",
+      "source_status": "weights_found_not_inference_tested",
+      "source_status_date": "2026-10-01",
+      "limitations": [
+        "Use the existing remote tool CLI and resource protocol.",
+        "ESM2 embedding output is not a zero-shot fitness score."
+      ]
+    }
+  ]
+}

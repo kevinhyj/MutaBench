@@ -1,0 +1,206 @@
+{
+  "audit_version": "feature-contract-audit-1",
+  "runtime_protocol_changed": false,
+  "profiles": {
+    "singlechain_msa_protein_legacy": {
+      "producer": [
+        "work/proteingym_v1/prepare.py",
+        "work/proteingym_v1/prepare_expansion.py",
+        "work/proteingym_remainder_v1/prepare.py"
+      ],
+      "selection": "Remove first query record; sort/deduplicate remaining aligned strings; first 2048. Does NOT remove every homolog whose sequence equals WT. Lowercase insertions and dots removed; noncanonical characters treated as invalid/gap per column, not whole-homolog rejection.",
+      "weighting": "Weight=1/max(neighbors,1); shared valid identity >=0.8 and overlap >=0.5*(end-start+1). Coverage denominator is full selected WT region, not retained-column count.",
+      "probability": "p(a)=(weighted count(a)+1/20)/(weighted valid column count+1). Total pseudocount 1.",
+      "depth": "Sum of weights of 20 canonical amino acids in the column; excludes pseudocount.",
+      "gap": "1-depth/global_neff. Includes noncanonical symbols encoded invalid, not only literal gaps.",
+      "support": "low if depth<20 or gap>0.5, otherwise adequate; low-support values remain visible.",
+      "unaligned": "WT insertion positions receive uniform 1/20, depth 0, gap 1, low support and explicit homolog_column marker upstream. The selected-site packet does not forward this marker.",
+      "forwarding": "ln(p_mut/p_wt), rounded 5 decimals; depth 3, gap 4 decimals. Raw independent-site sum stored separately.",
+      "units": {
+        "frequency": "dimensionless",
+        "depth": "weighted count",
+        "gap": "dimensionless",
+        "log_ratio": "dimensionless natural log"
+      },
+      "findings": [
+        "F03"
+      ]
+    },
+    "singlechain_msa_rna_legacy": {
+      "producer": [
+        "evagent/integrated/evidence_tools.py"
+      ],
+      "selection": "Reviewed natural homolog source; exact aligned WT mapping; remove record by query_identifier (default WT_query), not by sequence equality; sorted unique aligned strings first 2048. Any ambiguous selected homolog rejects the profile. T->U, dot->gap; FASTA/A3M lowercase insertions removed.",
+      "weighting": "Inverse >=80% shared-valid identity neighbors with shared valid coverage >=50% of full WT length.",
+      "probability": "p(base)=(weighted base count+0.25)/(weighted canonical ACGU count+1).",
+      "depth": "Canonical ACGU weight sum, rounded 3 decimals in upstream profile.",
+      "gap": "Literal gap weight/global_neff, rounded 5 decimals upstream. Global Neff rounded 3.",
+      "support": "Computed before rounding: low if valid_weight<20 or gap>0.5; otherwise adequate.",
+      "forwarding": "Same packet log ratio/depth/gap rounding as protein, from stored frequencies; unavailable natural MSA remains unavailable.",
+      "units": {
+        "frequency": "dimensionless",
+        "depth": "weighted count",
+        "gap": "dimensionless",
+        "log_ratio": "dimensionless natural log"
+      },
+      "findings": []
+    },
+    "complex_protein_site_msa_legacy": {
+      "producer": [
+        "code/tools/offline_ablation/features.py",
+        "zeroshot_baseline_experiment/singlechain/baseline/singlechain/models.py",
+        "experiments/protein_rna_ablation_N10_CR25_20261003_msa_v2_native_auth/code_snapshot/code/tools/offline_ablation/features.py"
+      ],
+      "selection": "Project homologs to WT match columns; deduplicate; exclude all projected WT-identical homologs and entire ambiguous homologs; lexical first 2048; remove columns unsupported by selected homologs.",
+      "weighting": "Inverse >=80% shared-valid identity neighbors and >=50% overlap relative to retained-column length.",
+      "probability": "(weighted amino-acid count+0.05)/(weighted valid column count+1); global_neff=sum(weights).",
+      "missing": "Current features.py: unsupported retained-column lookup => null numeric evidence. Historical frozen features.py SHA 0c3715... instead set weighted_valid_count=0, weighted_gap_fraction=1, weighted_unknown_fraction=0 while probabilities/log ratio remained null and status=no_valid_homolog_at_column. This historical exception is present in PPI prompts. Unknown fraction on valid retained columns is zero after whole-homolog filtering.",
+      "gate": "status ok requires mapping/WT match/supported column and global_neff>=20. Generic renderer can expose low-Neff frequencies with status; DNA shown_evidence removes log ratio and nulls frequencies/counts for non-ok rows.",
+      "independent_score": "Legacy score requires every site ok; sum natural log ratios; no epistasis model.",
+      "findings": [
+        "F07"
+      ]
+    },
+    "protein_rna_msa_v2": {
+      "producer": [
+        "code/tools/offline_ablation/rna_features.py",
+        "code/tools/offline_ablation/protein_rna_v2.py"
+      ],
+      "selection": "Valid unique non-WT projected homologs ordered by SHA256 of literal 42 + newline + sequence, first 2048; no label-dependent selection.",
+      "weighting": "Same 80%/50% retained-column inverse-neighbor weighting and amino-acid total pseudocount 1 as complex profile.",
+      "gate": "Keep low Neff as global_neff_below_frozen_20 quality flag. Independent score accepts ok OR this low-Neff status when site valid count>0 and log ratio finite. Legacy strict score retained separately.",
+      "scope": "Protein mutation-site MSA; not an RNA-partner MSA algorithm.",
+      "findings": []
+    },
+    "singlechain_protein_structure_legacy": {
+      "producer": [
+        "experiments/proteingym_structure_full_20260916/structure_features.py",
+        "experiments/proteingym_structure_remainder_20260916/structure_features.py",
+        "experiments/pg_rna_seed42_n250_v1/evidence.py"
+      ],
+      "mapping": "Unique entire-chain WT exact match, first MODEL. Canonical ATOM plus MSE HETATM. Sequence coordinate separate from PDB numbering.",
+      "altloc": "Geometry per-atom highest occupancy; ties favor blank then A. SASA uses Bio.PDB selected atoms independently.",
+      "plddt": "CA B-factor only if caller explicitly asserts AlphaFold provenance and value in [0,100], else null.",
+      "contacts": "ca_contact_count_8a upstream -> nonlocal_ca_contacts_8a packet; intrachain CA distance<=8 A, exclude |i-j|<=2. Counts observed CA neighbors only.",
+      "nearest": "Up to 3 nearest observed eligible CA atoms, no 8 A cutoff; distance rounded 2 decimals.",
+      "sasa": "Isolated matched chain; remove waters/ligands except MSE; Bio.PDB ShrakeRupley probe 1.4 A/100 points, residue sum rounded 2 decimals. No explicit missing-heavy-atom completeness gate; atom set is what Bio.PDB retains, not forced heavy-only.",
+      "packet": "Does not forward upstream contacts_complete, nonlocal_ca_expected/observed, sasa_caveat, provenance assertion or alternate_atom_names.",
+      "units": {
+        "sasa_a2": "angstrom^2",
+        "distance_a": "angstrom",
+        "contacts": "residues",
+        "plddt": "0..100 confidence"
+      },
+      "findings": [
+        "F04"
+      ]
+    },
+    "singlechain_rna_structure_legacy": {
+      "producer": [
+        "experiments/pg_rna_seed42_n250_v1/evidence.py",
+        "evagent/integrated/research/structure.py",
+        "experiments/rnagym_af3_missing_20260918/validate.py"
+      ],
+      "mapping": "ATOM canonical ACGU, blank/A altloc; unique whole-WT chain; sorted chain/residue/insertion. Anchor C4-prime -> C1-prime -> P. Parser does not itself isolate MODEL; current 31 files each have a single model.",
+      "contacts": "Count remaining anchors <=8 A after excluding |i-j|<=3; nearest 3 without cutoff, distance rounded 2 decimals.",
+      "confidence_actual": "packet reads anchor B-factor when structure_kind=predicted_WT. 20 historical mapped files had B-factor overwritten to zero by annotate_cif, so those packet zeros are NOT valid pLDDT. Ten Gemmi-converted AF3 files preserve original confidence; one experimental structure has null packet pLDDT.",
+      "confidence_required": "For a future version use verified original CIF atom confidence with explicit atom/coordinate mapping, or null+unavailable if provenance cannot establish confidence. Do not rewrite historical packets.",
+      "units": {
+        "distance_a": "angstrom",
+        "nonlocal_neighbors_8a": "anchor count",
+        "plddt": "0..100 only when source verified"
+      },
+      "findings": [
+        "F01"
+      ]
+    },
+    "complex_protein_site_structure_legacy": {
+      "producer": [
+        "code/tools/offline_ablation/features.py",
+        "code/tools/offline_ablation/run.py",
+        "code/tools/offline_ablation/protein_dna.py"
+      ],
+      "model": "First PDB model; only task-frozen residue IDs in the two explicit disjoint partner groups; finite heavy atoms, exclude H/D.",
+      "altloc": "Per-residue coherent alternative: maximize summed occupancy, then atom count, then prefer A, then label; retain shared blank atoms; duplicate atom name chooses higher occupancy.",
+      "partner": "Opposite frozen group, not nearest chain. Both heavy/light antibody chains remain in their own group when partners removed.",
+      "distance": "Minimum of all WT residue-heavy to specified partner-heavy atom distances.",
+      "contacts": "Number of distinct partner residues with any atom <=5 A, not atom pairs.",
+      "sasa": "ShrakeRupley 1.4 A,100 points. Site needs N/CA/C/O plus expected WT sidechain heavy atoms. SASA missing=>null; distance/contact may still use observed atoms.",
+      "delta_sasa": "SASA of this residue in own-group-only environment minus same residue SASA in the two-group bound environment. Not whole-group surface area.",
+      "units": {
+        "distance": "angstrom",
+        "contacts": "partner residues",
+        "sasa": "angstrom^2"
+      },
+      "findings": [
+        "F05"
+      ]
+    },
+    "protein_rna_structure_contact_legacy": {
+      "producer": [
+        "code/tools/offline_ablation/structure_v3.py",
+        "code/tools/offline_ablation/protein_rna_structure_contact.py"
+      ],
+      "scope": "Uses reviewed structure_v3 scope; only three eligible assays get contact evidence; other seven reuse base requests exactly.",
+      "geometry": "First model; coherent residue altloc; specified protein/RNA polymers with explicit reviewed RNA instances, modified-atom classification and coordinate completeness checks. WT sidechain and whole-residue distances are separate upstream fields.",
+      "actual_boolean": "direct_rna_contact = whole-residue partner_contact_count_5A > 0. Current guidance incorrectly says sidechain heavy atoms.",
+      "actual_moieties": "Base/ribose/phosphate classes from all whole-residue heavy-atom contacts, emitted only with contact and complete classification; not restricted to sidechain.",
+      "visibility": "Only site_id, direct_rna_contact and optional rna_contact_moieties sent; distances/counts/SASA remain audit-only.",
+      "required": "Future description must say WT residue heavy atoms including backbone, OR a separately versioned sidechain-only computation must be defined and re-evaluated. Do not silently relabel the frozen results.",
+      "findings": [
+        "F02"
+      ]
+    },
+    "protein_ligand_structure_legacy": {
+      "producer": [
+        "code/tools/offline_ablation/ligand_features.py",
+        "code/tools/offline_ablation/platinum.py"
+      ],
+      "model": "First PDB model; preserve all base-input protein chains/residue IDs plus every HETATM instance matching annotated ligand residue name; exclude water/other ligand/cofactor names.",
+      "altloc": "Bio.PDB default per-atom highest-occupancy conformer; differs from coherent residue altloc in generic complex builder.",
+      "distance": "Minimum site-heavy to annotated-ligand-heavy atom distance.",
+      "contacts": "Number of distinct specified ligand heavy atoms with any site heavy atom <=5 A.",
+      "sasa": "ShrakeRupley 1.4 A/100 points; all base protein chains plus matching ligand copies. Delta is same WT residue SASA after removing only these ligands minus bound SASA; complete WT heavy atoms required, errors=>null.",
+      "units": {
+        "distance": "angstrom",
+        "contacts": "ligand heavy atoms",
+        "sasa": "angstrom^2"
+      },
+      "findings": []
+    },
+    "admet_molecule_structure_legacy": {
+      "producer": [
+        "experiments/admet_cr_structure_v1/prepare.py",
+        "experiments/admet_cr_structure_v1/prepare_remaining.py"
+      ],
+      "generation": "MolFromSmiles -> AddHs -> ETKDGv3, randomSeed=1,numThreads=1,pruneRmsThresh=0.5,maxIterations=100,numConfs=3.",
+      "optimization": "MMFF94 if all parameters available, otherwise UFF; numThreads=1,maxIters=100. Return statuses/energies ignored; no energy-ranked best-conformer selection and no convergence guarantee.",
+      "aggregation": "Descriptor calculated on every returned optimized conformer; componentwise median rounded 4 decimals. Remaining19 caches identical SMILES but preserves endpoint rows.",
+      "atom_scope": "Explicit H retained. NPR1/NPR2, RadiusOfGyration, Asphericity use atomic masses by default; Spherocity uses unweighted gyration eigenvalues.",
+      "versions": "Historical producer source SHA and frozen files verified; recorded RDKit 2026.03.6. Audit environment 2025.09.4 used only for synthetic unit scaling, not regeneration.",
+      "descriptor_units": {
+        "NPR1": "dimensionless",
+        "NPR2": "dimensionless",
+        "Asphericity": "dimensionless",
+        "SpherocityIndex": "dimensionless",
+        "RadiusOfGyration": "angstrom",
+        "PBF": "angstrom"
+      },
+      "descriptor_definitions": {
+        "NPR1": "smallest/largest principal moment of inertia",
+        "NPR2": "middle/largest principal moment of inertia",
+        "RadiusOfGyration": "sqrt(sum of mass-weighted gyration eigenvalues)",
+        "Asphericity": "0.5*sum(pairwise squared differences of mass-weighted gyration eigenvalues)/(sum of these eigenvalues)^2",
+        "SpherocityIndex": "3*smallest unweighted gyration eigenvalue/sum of unweighted gyration eigenvalues",
+        "PBF": "RDKit CalcPBF plane-of-best-fit descriptor; length dimension verified independently by synthetic coordinate scaling"
+      },
+      "external_sources": [
+        "https://raw.githubusercontent.com/rdkit/rdkit/Release_2026_03_6/Code/GraphMol/Descriptors/PMI.cpp",
+        "https://www.rdkit.org/docs/cppapi/PBF_8h_source.html"
+      ],
+      "findings": [
+        "F06"
+      ]
+    }
+  }
+}
