@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "tasks": 249,
+  "query_rows": 61688,
+  "label_rows": 61688,
+  "unique_task_variant_identities": true,
+  "query_label_identity_sets_match": true,
+  "query_order_matches_frozen_task_candidates": true,
+  "labels_finite": true,
+  "labels_absent_from_query_columns": true,
+  "model_calls": 0
+}

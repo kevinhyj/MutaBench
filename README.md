@@ -11,12 +11,14 @@ reference method. You can evaluate another model's predictions without an API
 key, an agent framework or a GPU.
 
 **Release status:** code, task metadata, saved metrics and five historical
-comparison figures are included. Full sequences, independent evaluation labels,
-MSA, structures, feature bundles and raw prediction archives are not bundled
-in Git. The separate dataset release is being prepared; see
-[`benchmark/data_release.json`](benchmark/data_release.json). This checkout
-supports the synthetic evaluation example and saved-result reproduction. It
-does not yet provide an end-to-end download of every research experiment.
+comparison figures are included here. Scientific data are distributed through
+[Hugging Face Datasets](https://huggingface.co/datasets/yanjiehuang/MutaBench),
+with the verified immutable revision recorded in
+[`benchmark/data_release.json`](benchmark/data_release.json). The data pack
+includes zero-shot and few-shot/multiround inputs, support examples, independent
+evaluator labels and selected evidence. Raw prediction archives and every
+historical research experiment are not included; see
+[release boundaries](docs/reproducibility.md).
 
 ## Quick start
 
@@ -100,16 +102,30 @@ styles. Byte-identical historical publication figures are in
 
 ## Data distribution
 
-GitHub holds code, protocols, lightweight manifests, synthetic examples and result
-summaries. Hugging Face Datasets is the intended home for the full reviewed data
-release. The dataset identifier, immutable revision and file checksums will be
-recorded in `benchmark/data_release.json` once that release is available.
+**Access:** the dataset repository is currently private. Log in with an account
+that has access before downloading. Publishing this code does not grant dataset
+access or change its visibility.
 
-Upstream datasets retain their own terms. Private cohorts, credentials, installed
-environments, vendor source and separately licensed executables are excluded
-from this code release. A filename containing `public` is not a redistribution
-license. See [data distribution](docs/data.md) and
-[third-party notices](THIRD_PARTY_NOTICES.md).
+GitHub holds code, protocols, lightweight manifests, synthetic examples and result
+summaries. The separate reviewed data release contains **59 archives, 217,835
+files, 24.6 GB compressed** (54.5 GB expanded). Lightweight single-chain tables
+contain **61,688 queries and matching labels across 249 registered tasks**.
+These tables are one part of the data pack; complex, ADMET and few-shot protocol
+assets remain in their original archive paths.
+
+```bash
+python -m pip install -e '.[data]'
+python scripts/download_data.py --tables-only --output outputs/data-tables
+# Omit --tables-only to download the full release.
+```
+
+The downloader pins the verified dataset commit and checks SHA256 values.
+For archive restoration and dataset access requirements, see
+[data distribution](docs/data.md). Upstream datasets retain their own terms,
+including source-specific non-commercial restrictions. Project-owned code's MIT
+license does not relicense those assets. Private cohorts, credentials, installed
+environments, vendor source and separately licensed executables are excluded.
+See [third-party notices](THIRD_PARTY_NOTICES.md).
 
 ## Reference methods
 

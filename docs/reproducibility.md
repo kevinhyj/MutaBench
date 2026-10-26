@@ -45,13 +45,20 @@ The incomplete DeepSeek1017 pilot is excluded from the full-cohort comparison.
 An older result synchronizer is not the authority for the merged saved metrics.
 No new model scores were generated for this release.
 
-## Not yet bundled
+## Scientific data and remaining boundaries
 
-Full queries, evaluator labels, evidence, raw predictions and complete
-few-shot/multiround experiments require the separate data release. Recomputing
-metric values from raw predictions is distinct from verifying saved metric
-packets. The current Git checkout supports the latter; it does not claim the
-former for every historical run.
+The separate Hugging Face release contains the selected public source data,
+frozen zero-shot inputs and evaluator references, few-shot/multiround splits,
+support examples, independent query evaluators and selected evidence assets.
+The verified immutable commit and manifest checksum are bound in
+`benchmark/data_release.json`; see [download and restore](data.md).
+
+The data release is a curated benchmark export, not the entire research server.
+Private cohorts, full API histories, raw prediction archives and some optional
+upstream or historical assets are excluded or unavailable. `PLAN.json` records
+scope and missing source paths. Recomputing metric values from raw predictions
+is distinct from verifying saved metric packets. The Git checkout supports the
+latter; it does not claim the former for every historical run.
 
 External-model readiness varies. Historical optional weights, submodules,
 services, licensed executables and host environments are not made complete by
