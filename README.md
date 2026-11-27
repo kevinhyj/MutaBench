@@ -20,6 +20,10 @@ evaluator labels and selected evidence. Raw prediction archives and every
 historical research experiment are not included; see
 [release boundaries](docs/reproducibility.md).
 
+## Contribute a dataset
+
+Have experimental measurements to contribute? [Propose a dataset](https://github.com/kevinhyj/MutaBench/issues/new?template=dataset.yml) or follow the [four-file example and submission guide](CONTRIBUTING.md).
+
 ## Quick start
 
 Python 3.10 or later:

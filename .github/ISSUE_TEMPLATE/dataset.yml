@@ -1,0 +1,25 @@
+name: Contribute a dataset
+description: Propose measured data for a MutaBench task.
+title: "[Dataset] "
+body:
+  - type: textarea
+    id: dataset
+    attributes:
+      label: Dataset and prediction task
+      description: Describe the measured endpoint, units, direction, molecular system and approximate assay/sample counts.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source, credit and sharing terms
+      description: Give the citation or source revision, contributor names, and what may be redistributed.
+    validations:
+      required: true
+  - type: textarea
+    id: split
+    attributes:
+      label: Development and test access
+      description: Describe public examples, overlap with existing datasets, and whether withheld labels exist. Include only information cleared for this issue.
+    validations:
+      required: true

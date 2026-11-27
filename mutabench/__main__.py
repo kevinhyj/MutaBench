@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from . import __version__
+from .community import validate_dataset
 from .evaluation import evaluate
 
 
@@ -17,7 +18,15 @@ def main():
     command.add_argument("--labels", type=Path, required=True)
     command.add_argument("--predictions", type=Path, required=True)
     command.add_argument("--output", type=Path, required=True)
+    validate = commands.add_parser("validate-dataset", help="Check a community development package")
+    validate.add_argument("directory", type=Path)
     args = parser.parse_args()
+    if args.command == "validate-dataset":
+        try:
+            print(json.dumps(validate_dataset(args.directory), indent=2))
+        except (ValueError, KeyError, TypeError, OSError) as error:
+            parser.error(str(error))
+        return
     if args.output.exists():
         parser.error("Choose a fresh output file; existing results are never overwritten")
     try:

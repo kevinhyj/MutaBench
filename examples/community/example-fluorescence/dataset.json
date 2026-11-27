@@ -1,0 +1,13 @@
+{
+  "schema": "mutabench-community-v1",
+  "dataset_id": "example-fluorescence",
+  "version": "1.0.0",
+  "title": "Synthetic fluorescence measurements",
+  "contributors": ["MutaBench example authors"],
+  "source": "Invented measurements for the contribution tutorial",
+  "source_revision": "tutorial-v1",
+  "license": "CC0-1.0 (synthetic example only)",
+  "readout": "Relative fluorescence in arbitrary units, averaged over replicates. Higher is brighter.",
+  "split": "All four synthetic records are public development examples.",
+  "test_access": "development-only"
+}

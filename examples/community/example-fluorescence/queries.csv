@@ -1,0 +1,5 @@
+task_id,variant_id,reporter_sequence
+example-fluorescence/brightness,a,ASGT
+example-fluorescence/brightness,b,ATGT
+example-fluorescence/brightness,c,ASAT
+example-fluorescence/brightness,d,ASGA

@@ -1,0 +1,10 @@
+{
+  "schema": "mutabench-tasks-v1",
+  "tasks": [{
+    "task_id": "example-fluorescence/brightness",
+    "domain": "protein",
+    "metric": "spearman",
+    "higher_label_is_better": true,
+    "candidate_ids": ["a", "b", "c", "d"]
+  }]
+}

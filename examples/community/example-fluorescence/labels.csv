@@ -1,0 +1,5 @@
+task_id,variant_id,label
+example-fluorescence/brightness,a,1.0
+example-fluorescence/brightness,b,0.4
+example-fluorescence/brightness,c,0.8
+example-fluorescence/brightness,d,0.8
