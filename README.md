@@ -1,11 +1,11 @@
 <h1 align="center">MutaBench</h1>
-<p align="center"><strong>A benchmark for mutation effects and molecular properties</strong></p>
+<p align="center"><strong>General-purpose language models predict and learn fitness landscapes across biomolecular systems</strong></p>
 
 <p align="center">
+  <a href="#paper"><b>Paper</b></a> &nbsp;·&nbsp;
   <a href="https://kevinhyj.github.io/MutaBench-web/#results"><b>Leaderboard</b></a> &nbsp;·&nbsp;
-  <a href="https://huggingface.co/datasets/yanjiehuang/MutaBench"><b>Dataset on Hugging Face</b></a> &nbsp;·&nbsp;
+  <a href="https://huggingface.co/datasets/yanjiehuang/MutaBench"><b>Dataset</b></a> &nbsp;·&nbsp;
   <a href="https://github.com/kevinhyj/MutaBench-web/blob/main/CONTRIBUTING.md"><b>Contribute a dataset</b></a>
-  <!-- Add the paper link here when published. -->
 </p>
 
 MutaBench compares general-purpose language models and specialist methods on mutation-effect prediction in proteins, RNA and molecular complexes, alongside small-molecule ADMET tasks. The experiments vary the labeled examples, rounds of feedback, molecular inputs and reasoning effort available to each model.
@@ -76,6 +76,10 @@ python -m pytest -q
 The five saved comparisons cover Protein50, RNA28, ADMET classification13, ADMET regression8 and protein–protein27. Best-arm results select a complete configuration by its mean on the displayed cohort. Each packet records the candidates, selection rule and per-assay values.
 
 </details>
+
+## Paper
+
+Coming soon
 
 ## Citation and license
 
