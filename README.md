@@ -1,4 +1,4 @@
-<h1 align="center"><img src="docs/assets/mutabench-wordmark.png" alt="MutaBench" width="100%"></h1>
+<h1 align="center">MutaBench</h1>
 <p align="center"><strong>A benchmark for mutation effects and molecular properties</strong></p>
 
 <p align="center">
@@ -12,29 +12,21 @@ MutaBench compares general-purpose language models and specialist methods on mut
 
 ## Benchmark results
 
-<p align="center">
-  <a href="figures/overview/zero-shot-functional-categories.png"><img src="figures/overview/zero-shot-functional-categories.png" width="650" alt="Zero-shot performance in eight task groups, with language models in pink and specialist methods in blue."></a>
-  <br><strong>Zero-shot</strong> · Five language models and task-specific baselines across eight task groups.
-</p>
+### Zero-shot
 
-<table>
-  <tr>
-    <td width="33%" valign="top" align="center">
-      <a href="figures/overview/few-shot.pdf"><img src="figures/overview/few-shot-preview.png" alt="Protein panel of the few-shot comparison"><br><strong>Few-shot</strong></a><br>
-      <sub>Spearman correlation with single- and double-mutant support examples.</sub>
-    </td>
-    <td width="34%" valign="top" align="center">
-      <a href="figures/overview/multiround.pdf"><img src="figures/overview/multiround-preview.png" alt="Protein panel showing the percentage of top-decile hits across five rounds"><br><strong>Multiround</strong></a><br>
-      <sub>Top-decile hits across five rounds in protein, RNA and protein–protein tasks.</sub>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <a href="figures/overview/input-thinking-ablation.pdf"><img src="figures/overview/input-thinking-ablation-preview.png" alt="Thinking-effort heatmap from the input and reasoning ablation"><br><strong>Input &amp; thinking effort</strong></a><br>
-      <sub>Sequence, MSA and structure inputs across three levels of reasoning effort.</sub>
-    </td>
-  </tr>
-</table>
+<a href="figures/overview/zero-shot-functional-categories.png"><img src="figures/overview/zero-shot-functional-categories.png" width="100%" alt="Five language models and specialist baselines across eight task groups."></a>
 
-Select a figure to open the full comparison. The three panel previews link to the original PDFs.
+### Few-shot
+
+<a href="figures/overview/few-shot.pdf"><img src="figures/overview/few-shot.png" width="100%" alt="Spearman correlation for zero-shot and two support settings across protein, RNA and protein–protein assays."></a>
+
+### Multiround
+
+<a href="figures/overview/multiround.pdf"><img src="figures/overview/multiround.png" width="100%" alt="Top-decile hit rates over five rounds for protein, RNA and protein–protein tasks."></a>
+
+### Input and thinking-effort ablations
+
+<a href="figures/overview/input-thinking-ablation.pdf"><img src="figures/overview/input-thinking-ablation.png" width="100%" alt="Input ablation across six molecular systems, with a heatmap comparing low, medium and high reasoning effort for each input setting."></a>
 
 ## Quick start
 
