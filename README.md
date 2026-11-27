@@ -2,7 +2,6 @@
 <p align="center"><strong>Benchmarking mutation effects and molecular properties across biological systems</strong></p>
 
 <p align="center">
-  <a href="https://kevinhyj.github.io/MutaBench-web/">Website</a> &nbsp;·&nbsp;
   <a href="https://kevinhyj.github.io/MutaBench-web/#results">Leaderboard</a> &nbsp;·&nbsp;
   <a href="https://huggingface.co/datasets/yanjiehuang/MutaBench">Hugging Face dataset</a> &nbsp;·&nbsp;
   <a href="https://github.com/kevinhyj/MutaBench-web/blob/main/CONTRIBUTING.md">Contribute a dataset</a>
