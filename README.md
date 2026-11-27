@@ -1,31 +1,31 @@
-# MutaBench
+<h1 align="center">MutaBench</h1>
+<p align="center"><strong>Benchmarking mutation effects and molecular properties across biological systems</strong></p>
 
-[Website & leaderboard](https://kevinhyj.github.io/MutaBench-web/) · [Dataset on Hugging Face](https://huggingface.co/datasets/yanjiehuang/MutaBench) · [Public project page](https://github.com/kevinhyj/MutaBench-web)
-<!-- Add the paper link here when published. -->
+<p align="center">
+  <a href="https://kevinhyj.github.io/MutaBench-web/">Website &amp; leaderboard</a> &nbsp;·&nbsp;
+  <a href="https://huggingface.co/datasets/yanjiehuang/MutaBench">Hugging Face dataset</a> &nbsp;·&nbsp;
+  <a href="https://github.com/kevinhyj/MutaBench-web/blob/main/CONTRIBUTING.md">Contribute a dataset</a>
+  <!-- Add the paper link here when published. -->
+</p>
 
-MutaBench provides evaluation protocols, reference implementations and saved
-results for biomolecular variant-effect prediction. Tasks span proteins, RNA,
-and protein complexes with protein, RNA, DNA or small-molecule partners. ADMET
-classification and regression are tracked separately as molecular-property
-tasks, rather than treated as mutation landscapes.
+MutaBench evaluates how well general-purpose language models and specialist methods predict mutation effects in proteins, RNA and molecular complexes. It also covers small-molecule ADMET regression and classification. The benchmark includes zero-shot, few-shot and multiround evaluation protocols.
 
-This first code release separates the benchmark interface from the EVAgent
-reference method. You can evaluate another model's predictions without an API
-key, an agent framework or a GPU.
+<p align="center">
+  <a href="figures/overview/zero-shot-functional-categories.png"><img src="figures/overview/zero-shot-functional-categories.png" width="100%" alt="Zero-shot prediction across eight task groups. Pink points show five general-purpose language models and blue points show task-specific baselines."></a>
+</p>
 
-**Release status:** code, task metadata, saved metrics and five historical
-comparison figures are included here. Scientific data are distributed through
-[Hugging Face Datasets](https://huggingface.co/datasets/yanjiehuang/MutaBench),
-with the verified immutable revision recorded in
-[`benchmark/data_release.json`](benchmark/data_release.json). The data pack
-includes zero-shot and few-shot/multiround inputs, support examples, independent
-evaluator labels and selected evidence. Raw prediction archives and every
-historical research experiment are not included; see
-[release boundaries](docs/reproducibility.md).
+**Zero-shot prediction across functional categories.** Each column compares models within one functional category. Regression tasks use signed Spearman correlation and ADMET classification uses AUROC. Select the figure to read the category labels and baseline names at full resolution.
+
+<p align="center">
+  <a href="#quick-start">Run an evaluation</a> &nbsp;·&nbsp;
+  <a href="#data-distribution">Download data</a> &nbsp;·&nbsp;
+  <a href="#saved-comparisons">Explore saved results</a> &nbsp;·&nbsp;
+  <a href="#contents">Repository guide</a>
+</p>
 
 ## Quick start
 
-Python 3.10 or later:
+From the repository root, evaluate the included synthetic predictions with Python 3.10 or later. This example runs on CPU without model credentials.
 
 ```bash
 python -m venv .venv
