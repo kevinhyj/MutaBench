@@ -59,9 +59,8 @@ instructions rather than duplicate installed environments or proprietary tools.
 
 ## Download and restore
 
-**Access:** the dataset repository is currently private. Log in with an account
-that has access before downloading. Publishing this code does not grant dataset
-access or change its visibility.
+The [Hugging Face dataset card](https://huggingface.co/datasets/yanjiehuang/MutaBench) is public.
+Sign in and request access on that page to download the data after approval.
 
 Install the data extra and download either the lightweight tables or the complete pack:
 
@@ -76,8 +75,7 @@ python3.12 scripts/restore_data.py \
 ```
 
 Authentication uses your normal Hugging Face login or `HF_TOKEN`; credentials
-are not stored in this repository. A private dataset requires access through
-its owning account or organization. The downloader pins an immutable revision
+are not stored in this repository. The downloader pins an immutable revision
 and verifies artifact SHA256 values. The restorer additionally validates tar
 membership and each restored file's byte size and SHA256; external symbolic
 links and archive traversal are rejected.

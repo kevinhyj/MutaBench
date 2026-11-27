@@ -1,5 +1,8 @@
 # MutaBench
 
+[Website & leaderboard](https://kevinhyj.github.io/MutaBench-web/) · [Dataset on Hugging Face](https://huggingface.co/datasets/yanjiehuang/MutaBench) · [Public project page](https://github.com/kevinhyj/MutaBench-web)
+<!-- Add the paper link here when published. -->
+
 MutaBench provides evaluation protocols, reference implementations and saved
 results for biomolecular variant-effect prediction. Tasks span proteins, RNA,
 and protein complexes with protein, RNA, DNA or small-molecule partners. ADMET
@@ -102,9 +105,8 @@ styles. Byte-identical historical publication figures are in
 
 ## Data distribution
 
-**Access:** the dataset repository is currently private. Log in with an account
-that has access before downloading. Publishing this code does not grant dataset
-access or change its visibility.
+The [Hugging Face dataset card](https://huggingface.co/datasets/yanjiehuang/MutaBench) is public.
+Sign in and request access on that page to download the data after approval.
 
 GitHub holds code, protocols, lightweight manifests, synthetic examples and result
 summaries. The separate reviewed data release contains **59 archives, 217,835
