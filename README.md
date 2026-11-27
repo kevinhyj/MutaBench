@@ -1,147 +1,90 @@
-<h1 align="center">MutaBench</h1>
-<p align="center"><strong>Benchmarking mutation effects and molecular properties across biological systems</strong></p>
+<h1 align="center"><img src="docs/assets/mutabench-wordmark.png" alt="MutaBench" width="100%"></h1>
+<p align="center"><strong>A benchmark for mutation effects and molecular properties</strong></p>
 
 <p align="center">
-  <a href="https://kevinhyj.github.io/MutaBench-web/#results">Leaderboard</a> &nbsp;·&nbsp;
-  <a href="https://huggingface.co/datasets/yanjiehuang/MutaBench">Hugging Face dataset</a> &nbsp;·&nbsp;
-  <a href="https://github.com/kevinhyj/MutaBench-web/blob/main/CONTRIBUTING.md">Contribute a dataset</a>
+  <a href="https://kevinhyj.github.io/MutaBench-web/#results"><b>Leaderboard</b></a> &nbsp;·&nbsp;
+  <a href="https://huggingface.co/datasets/yanjiehuang/MutaBench"><b>Dataset on Hugging Face</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/kevinhyj/MutaBench-web/blob/main/CONTRIBUTING.md"><b>Contribute a dataset</b></a>
   <!-- Add the paper link here when published. -->
 </p>
 
-MutaBench evaluates how well general-purpose language models and specialist methods predict mutation effects in proteins, RNA and molecular complexes. It also covers small-molecule ADMET regression and classification. The benchmark includes zero-shot, few-shot and multiround evaluation protocols.
+MutaBench compares general-purpose language models and specialist methods on mutation-effect prediction in proteins, RNA and molecular complexes, alongside small-molecule ADMET tasks. The experiments vary the labeled examples, rounds of feedback, molecular inputs and reasoning effort available to each model.
+
+## Benchmark results
 
 <p align="center">
-  <a href="figures/overview/zero-shot-functional-categories.png"><img src="figures/overview/zero-shot-functional-categories.png" width="100%" alt="Zero-shot prediction across eight task groups. Pink points show five general-purpose language models and blue points show task-specific baselines."></a>
+  <a href="figures/overview/zero-shot-functional-categories.png"><img src="figures/overview/zero-shot-functional-categories.png" width="650" alt="Zero-shot performance in eight task groups, with language models in pink and specialist methods in blue."></a>
+  <br><strong>Zero-shot</strong> · Five language models and task-specific baselines across eight task groups.
 </p>
 
-**Zero-shot prediction across functional categories.** Each column compares models within one functional category. Regression tasks use signed Spearman correlation and ADMET classification uses AUROC. Select the figure to read the category labels and baseline names at full resolution.
+<table>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <a href="figures/overview/few-shot.pdf"><img src="figures/overview/few-shot-preview.png" alt="Protein panel of the few-shot comparison"><br><strong>Few-shot</strong></a><br>
+      <sub>Spearman correlation with single- and double-mutant support examples.</sub>
+    </td>
+    <td width="34%" valign="top" align="center">
+      <a href="figures/overview/multiround.pdf"><img src="figures/overview/multiround-preview.png" alt="Protein panel showing the percentage of top-decile hits across five rounds"><br><strong>Multiround</strong></a><br>
+      <sub>Top-decile hits across five rounds in protein, RNA and protein–protein tasks.</sub>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <a href="figures/overview/input-thinking-ablation.pdf"><img src="figures/overview/input-thinking-ablation-preview.png" alt="Thinking-effort heatmap from the input and reasoning ablation"><br><strong>Input &amp; thinking effort</strong></a><br>
+      <sub>Sequence, MSA and structure inputs across three levels of reasoning effort.</sub>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <a href="#quick-start">Run an evaluation</a> &nbsp;·&nbsp;
-  <a href="#data-distribution">Download data</a> &nbsp;·&nbsp;
-  <a href="#saved-comparisons">Explore saved results</a> &nbsp;·&nbsp;
-  <a href="#contents">Repository guide</a>
-</p>
+Select a figure to open the full comparison. The three panel previews link to the original PDFs.
 
 ## Quick start
 
-From the repository root, evaluate the included synthetic predictions with Python 3.10 or later. This example runs on CPU without model credentials.
+Score the bundled synthetic predictions on CPU with Python 3.10 or later. From the repository root, run the following in a virtual environment.
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -e '.[dev,plots]'
-
+python -m pip install -e .
 mutabench evaluate \
   --tasks examples/tasks.json \
   --labels examples/labels.csv \
   --predictions examples/predictions.csv \
   --output outputs/example.json
+```
 
+The example yields Spearman 1.0 and AUROC 1.0. The evaluator writes per-task scores and a summary to a fresh JSON file. Regression uses signed Spearman correlation and classification uses AUROC. [Prediction CSV format and scoring rules](docs/evaluation.md)
+
+## Data distribution
+
+The frozen release contains **61,688 single-chain queries across 217 protein and 32 RNA assays**, with matching evaluator labels. Complex, ADMET and few-shot assets are distributed in the full archive. Request access on the [Hugging Face dataset card](https://huggingface.co/datasets/yanjiehuang/MutaBench), then download the lightweight tables with an approved account.
+
+```bash
+python -m pip install -e '.[data]'
+python scripts/download_data.py --tables-only --output outputs/data-tables
+```
+
+The downloader checks file hashes against a pinned revision. The full release is 24.6 GB compressed. Individual figures use their own assay cohorts. [Download and restore guide](docs/data.md) · [Pinned release](benchmark/data_release.json)
+
+## Repository guide
+
+| To… | Start here |
+| --- | --- |
+| Evaluate predictions against held-out labels | [Evaluation contract](docs/evaluation.md) · [Synthetic examples](examples/) · [Evaluator](mutabench/) |
+| Inspect task definitions and reference methods | [Task registry](benchmark/) · [Protocols](protocols/) · [EVAgent and specialist baselines](baselines/) |
+| Reproduce the five historical comparison plots | [Saved metrics](results/) · [Figure packets](results/figure_packets/) · [Original figures](figures/published/) |
+| Check cohort membership and model selection | [Figure cohorts](benchmark/figure_cohorts.json) · [Reproducibility notes](docs/reproducibility.md) |
+
+<details>
+<summary>Verify the release and redraw the historical plots</summary>
+
+```bash
+python -m pip install -e '.[dev,plots]'
 python scripts/verify_release.py
 python scripts/plot_results.py --output outputs/figures
 python -m pytest -q
 ```
 
-The example is entirely synthetic and is not a scientific benchmark result.
-Output paths must be new. None of these commands calls a model or reads private
-research files.
+The five saved comparisons cover Protein50, RNA28, ADMET classification13, ADMET regression8 and protein–protein27. Best-arm results select a complete configuration by its mean on the displayed cohort. Each packet records the candidates, selection rule and per-assay values.
 
-## Contents
-
-| Path | Contents |
-| --- | --- |
-| [`mutabench/`](mutabench/) | Model-independent CSV evaluation and CLI |
-| [`benchmark/`](benchmark/) | Registered task identities, candidate order, hashes, figure cohorts and release metadata |
-| [`protocols/`](protocols/) | Sampling, evidence, prompt and evaluation contracts; original zero-shot reference code |
-| [`baselines/`](baselines/) | EVAgent source, single-chain adapters and historical model catalog |
-| [`results/`](results/) | Saved single-chain/ADMET metrics and current comparison packets |
-| [`figures/`](figures/) | Original SVG, PNG and PDF comparison figures |
-| [`examples/`](examples/) | Synthetic tasks, independent labels and prediction format |
-| [`docs/`](docs/) | Evaluation, data distribution and reproducibility notes |
-
-The registered single-chain source pool has **217 protein assays and 32 RNA
-assays**. Registration, eligibility, evidence availability, completed model
-coverage and a particular figure's paired cohort are distinct quantities.
-These 249 registered tasks are not the denominator of every comparison.
-
-## Evaluation contract
-
-Prediction CSVs use `task_id,variant_id,score`, with optional `model,condition`
-columns. Identities are matched within the complete task namespace, independently
-of CSV order. Larger predicted scores always mean a larger outcome in the
-declared target direction. Regression tasks explicitly declare whether larger
-source labels are better; classification uses label 1 as the positive class.
-
-The evaluator reports signed Spearman for regression and tie-aware AUROC for
-classification. Incomplete tasks are not scored, undefined metrics stay null,
-and available task scores receive equal weight within each domain and metric.
-Missing predictions are never filled with zero. Group means with different
-completed task sets require a matched-task comparison before interpreting model
-differences. See [the evaluation format](docs/evaluation.md).
-
-Measured support examples and query labels remain separate. A prediction method
-may read only the support outcomes allowed by its frozen protocol; the independent
-evaluator reads query labels after predictions have been saved.
-
-## Saved comparisons
-
-The current saved figure packets cover Protein50, RNA28, ADMET classification13,
-ADMET regression8 and protein–protein27. Each packet includes the exact assay
-cohort and the per-assay values underlying every bar.
-
-![Saved protein comparison](figures/published/protein.png)
-
-Best-arm figures select a complete arm/thinking configuration by its mean on
-the displayed cohort. This is **descriptive selection on that same cohort**,
-not held-out hyperparameter selection or an independent leaderboard result.
-Selection rules and candidate arms are retained in the packets. The incomplete
-DeepSeek1017 pilot is not merged into the full-cohort results.
-
-`scripts/plot_results.py` redraws these numeric packets using portable Matplotlib
-styles. Byte-identical historical publication figures are in
-[`figures/published/`](figures/published/). See
-[reproducibility and limitations](docs/reproducibility.md).
-
-## Data distribution
-
-The [Hugging Face dataset card](https://huggingface.co/datasets/yanjiehuang/MutaBench) is public.
-Sign in and request access on that page to download the data after approval.
-
-GitHub holds code, protocols, lightweight manifests, synthetic examples and result
-summaries. The separate reviewed data release contains **59 archives, 217,835
-files, 24.6 GB compressed** (54.5 GB expanded). Lightweight single-chain tables
-contain **61,688 queries and matching labels across 249 registered tasks**.
-These tables are one part of the data pack; complex, ADMET and few-shot protocol
-assets remain in their original archive paths.
-
-```bash
-python -m pip install -e '.[data]'
-python scripts/download_data.py --tables-only --output outputs/data-tables
-# Omit --tables-only to download the full release.
-```
-
-The downloader pins the verified dataset commit and checks SHA256 values.
-For archive restoration and dataset access requirements, see
-[data distribution](docs/data.md). Upstream datasets retain their own terms,
-including source-specific non-commercial restrictions. Project-owned code's MIT
-license does not relicense those assets. Private cohorts, credentials, installed
-environments, vendor source and separately licensed executables are excluded.
-See [third-party notices](THIRD_PARTY_NOTICES.md).
-
-## Reference methods
-
-EVAgent retains its own Python package under [`baselines/evagent/`](baselines/evagent/).
-Shared zero-shot protocol implementations are under
-[`protocols/zeroshot/`](protocols/zeroshot/). They document historical protocol
-versions; the original research runners were not all a single unified harness.
-Some legacy preparation paths require separately released assets or external
-tools. See the component READMEs before running them.
+</details>
 
 ## Citation and license
 
-Repository citation metadata is in [`CITATION.cff`](CITATION.cff). Publication
-metadata will be added when finalized. Project-owned code is distributed under
-the [MIT license](LICENSE); this does not relicense upstream data, model weights,
-tools or dependencies.
-
+[Citation metadata](CITATION.cff) · [MIT license for project code](LICENSE) · [Third-party and upstream data terms](THIRD_PARTY_NOTICES.md)
